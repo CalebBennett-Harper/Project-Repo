@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify, make_response, current_app
 import json
-from src import db
+from / import db
 
 savings_bp = Blueprint('savings', __name__, url_prefix='/savings')
 
@@ -45,3 +45,4 @@ def delete_savings(savings_id):
     cursor.execute("DELETE FROM Savings WHERE Savings_ID = %s", (savings_id,))
     db.get_db().commit()
     return jsonify({'message': 'Savings transaction deleted successfully'}), 200
+
