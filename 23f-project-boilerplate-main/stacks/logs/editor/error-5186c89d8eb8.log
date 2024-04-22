@@ -17,3 +17,14 @@
 {"level":"info","ts":1713731465.8245544,"msg":"serving initial configuration"}
 {"level":"warn","ts":1713731465.8363473,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/appsmith-stacks/data/caddy","instance":"6bd5b70a-18da-4ad9-ad17-6d1c058f159e","try_again":1713817865.8363445,"try_again_in":86399.999999584}
 {"level":"info","ts":1713731465.8366172,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"info","ts":1713784696.8231013,"msg":"quitting process immediately","signal":"SIGQUIT"}
+{"level":"info","ts":1713784713.6985776,"msg":"using provided configuration","config_file":"/tmp/appsmith/Caddyfile","config_adapter":""}
+{"level":"info","ts":1713784713.7211485,"msg":"using provided configuration","config_file":"/tmp/appsmith/Caddyfile","config_adapter":""}
+{"level":"info","ts":1713784713.7241805,"logger":"admin","msg":"admin endpoint started","address":"127.0.0.1:2019","enforce_origin":false,"origins":["//localhost:2019","//[::1]:2019","//127.0.0.1:2019"]}
+{"level":"warn","ts":1713784713.7243524,"logger":"http.auto_https","msg":"server is listening only on the HTTP port, so no automatic HTTPS will be applied to this server","server_name":"srv0","http_port":80}
+{"level":"info","ts":1713784713.7247517,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+{"level":"info","ts":1713784713.7247608,"msg":"serving initial configuration"}
+{"level":"info","ts":1713784713.7248182,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x4000514c00"}
+{"level":"warn","ts":1713784713.726296,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/appsmith-stacks/data/caddy","instance":"6bd5b70a-18da-4ad9-ad17-6d1c058f159e","try_again":1713871113.7262955,"try_again_in":86399.99999975}
+{"level":"info","ts":1713784713.7264838,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"info","ts":1713785477.187799,"msg":"quitting process immediately","signal":"SIGQUIT"}

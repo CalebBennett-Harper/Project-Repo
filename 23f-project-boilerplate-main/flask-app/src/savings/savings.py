@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify, make_response, current_app
 import json
-from / import db
+from src import db
 
 savings_bp = Blueprint('savings', __name__, url_prefix='/savings')
 

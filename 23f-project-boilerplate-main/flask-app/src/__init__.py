@@ -2,7 +2,6 @@
 
 from flask import Flask
 from flaskext.mysql import MySQL
-from savings.savings import savings_bp
 
 # create a MySQL object that we will use in other parts of the API
 db = MySQL()
@@ -16,7 +15,7 @@ def create_app():
     app.config['SECRET_KEY'] = 'someCrazyS3cR3T!Key.!'
 
     # these are for the DB object to be able to connect to MySQL. 
-    app.config['MYSQL_DATABASE_USER'] = 'webapp'
+    app.config['MYSQL_DATABASE_USER'] = 'root'
     app.config['MYSQL_DATABASE_PASSWORD'] = open('/secrets/db_root_password.txt').readline().strip()
     app.config['MYSQL_DATABASE_HOST'] = 'db'
     app.config['MYSQL_DATABASE_PORT'] = 3306
@@ -34,17 +33,17 @@ def create_app():
         return "<h1>Welcome to the 3200 boilerplate app</h1>"
 
     # Import the various Beluprint Objects
-    from .savings  import savings
-    from .education  import education
-    from .challenges_and_badges  import challenges_and_badges
-    from .user_stories  import user_stories
+    from src.savings.savings  import savings_bp
+    from src.education.education  import education_bp
+    from src.challenges_and_badges.challenges_and_badges  import challenges_bp
+    from src.user_stories.user_stories  import user_stories_bp
 
     # Register the routes from each Blueprint with the app object
     # and give a url prefix to each
-    app.register_blueprint(savings,   url_prefix='/s')
-    app.register_blueprint(education,   url_prefix='/e')
-    app.register_blueprint(challenges_and_badges,   url_prefix='/c')
-    app.register_blueprint(user_stories,   url_prefix='/u')
+    app.register_blueprint(savings_bp,   url_prefix='/s')
+    app.register_blueprint(education_bp,   url_prefix='/e')
+    app.register_blueprint(challenges_bp,   url_prefix='/c')
+    app.register_blueprint(user_stories_bp,   url_prefix='/u')
 
     # Don't forget to return the app object
     return app
