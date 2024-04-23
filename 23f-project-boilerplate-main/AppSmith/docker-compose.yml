@@ -1,17 +1,17 @@
-version: "3"
-services:
-    appsmith:
-        # appsmith-ce for community edition, appsmith-ee for business.
-        image: index.docker.io/appsmith/appsmith-ce
-        container_name: appsmith
-        ports:
-            - "80:80"
-            - "443:443"
-        volumes:
-            - ./stacks:/appsmith-stacks
-        restart: unless-stopped
-        networks:
-            - appsmithnetwork
-networks:
-    appsmithnetwork:
-        external: true
+# version: "3"
+# services:
+#     appsmith:
+#         # appsmith-ce for community edition, appsmith-ee for business.
+#         image: index.docker.io/appsmith/appsmith-ce
+#         container_name: appsmith
+#         ports:
+#             - "80:80"
+#             - "443:443"
+#         volumes:
+#             - ./stacks:/appsmith-stacks
+#         restart: unless-stopped
+#         networks:
+#             - appsmithnetwork
+# networks:
+#     appsmithnetwork:
+#         external: true

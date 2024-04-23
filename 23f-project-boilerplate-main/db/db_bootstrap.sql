@@ -4,7 +4,6 @@
 -- need this name in the FLASK API file(s),  the AppSmith 
 -- data source creation.
 create database nosmoke_db;
-
 -- Via the Docker Compose file, a special user called webapp will 
 -- be created in MySQL. We are going to grant that user 
 -- all privilages to the new database we just created. 
@@ -19,8 +18,6 @@ flush privileges;
 use nosmoke_db;
 
 -- Put your DDL 
-CREATE DATABASE IF NOT EXISTS NoSmoke;
-USE NoSmoke;
 
 -- Users table
 CREATE TABLE IF NOT EXISTS Users (
