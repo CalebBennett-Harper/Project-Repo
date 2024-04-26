@@ -1,690 +1,113 @@
-2024-04-21 20:29:06.063 UTC [1788] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-21 20:29:06.063 UTC [1788] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-21 20:29:06.106 UTC [1788] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-21 20:29:06.230 UTC [1798] LOG:  database system was shut down at 2024-04-21 20:29:04 UTC
-2024-04-21 20:29:06.415 UTC [1788] LOG:  database system is ready to accept connections
-2024-04-21 20:30:09.272 UTC [1788] LOG:  received smart shutdown request
-2024-04-21 20:30:09.352 UTC [1788] LOG:  background worker "logical replication launcher" (PID 1804) exited with exit code 1
-2024-04-21 20:30:09.362 UTC [1799] LOG:  shutting down
-2024-04-21 20:30:09.593 UTC [1788] LOG:  database system is shut down
-2024-04-21 20:30:57.614 UTC [1514] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-21 20:30:57.627 UTC [1514] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-21 20:30:57.704 UTC [1514] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-21 20:30:57.822 UTC [1555] LOG:  database system was shut down at 2024-04-21 20:30:09 UTC
-2024-04-21 20:30:59.425 UTC [1514] LOG:  database system is ready to accept connections
-2024-04-22 11:18:16.624 UTC [1514] LOG:  received smart shutdown request
-2024-04-22 11:18:16.715 UTC [1514] LOG:  background worker "logical replication launcher" (PID 1571) exited with exit code 1
-2024-04-22 11:18:16.723 UTC [1565] LOG:  shutting down
-2024-04-22 11:18:16.812 UTC [1514] LOG:  database system is shut down
-2024-04-22 11:18:33.633 UTC [1536] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-22 11:18:33.633 UTC [1536] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-22 11:18:33.636 UTC [1536] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-22 11:18:33.649 UTC [1578] LOG:  database system was shut down at 2024-04-22 11:18:16 UTC
-2024-04-22 11:18:33.676 UTC [1536] LOG:  database system is ready to accept connections
-2024-04-22 11:31:16.114 UTC [1536] LOG:  received smart shutdown request
-2024-04-22 11:31:16.157 UTC [1536] LOG:  background worker "logical replication launcher" (PID 1587) exited with exit code 1
-2024-04-22 11:31:16.159 UTC [1582] LOG:  shutting down
-2024-04-22 11:31:16.175 UTC [1536] LOG:  database system is shut down
-2024-04-22 11:46:26.967 UTC [1518] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-22 11:46:26.967 UTC [1518] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-22 11:46:26.974 UTC [1518] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-22 11:46:26.984 UTC [1556] LOG:  database system was shut down at 2024-04-22 11:31:16 UTC
-2024-04-22 11:46:27.003 UTC [1518] LOG:  database system is ready to accept connections
-2024-04-22 22:02:11.672 UTC [1518] LOG:  received smart shutdown request
-2024-04-22 22:02:11.738 UTC [1518] LOG:  background worker "logical replication launcher" (PID 1563) exited with exit code 1
-2024-04-22 22:02:11.745 UTC [1558] LOG:  shutting down
-2024-04-22 22:02:11.867 UTC [1518] LOG:  database system is shut down
-2024-04-22 22:03:00.555 UTC [1514] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-22 22:03:00.556 UTC [1514] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-22 22:03:00.561 UTC [1514] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-22 22:03:00.569 UTC [1557] LOG:  database system was shut down at 2024-04-22 22:02:11 UTC
-2024-04-22 22:03:00.592 UTC [1514] LOG:  database system is ready to accept connections
-2024-04-23 01:10:57.123 UTC [2395] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 01:10:57.123 UTC [2395] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 01:10:57.131 UTC [2395] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 01:10:57.143 UTC [2400] LOG:  database system was interrupted; last known up at 2024-04-22 22:08:00 UTC
-2024-04-23 01:10:57.518 UTC [2400] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 01:10:57.519 UTC [2400] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 01:10:57.532 UTC [2395] LOG:  startup process (PID 2400) exited with exit code 1
-2024-04-23 01:10:57.532 UTC [2395] LOG:  aborting startup due to startup process failure
-2024-04-23 01:10:57.539 UTC [2395] LOG:  database system is shut down
-2024-04-23 01:10:59.124 UTC [2410] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 01:10:59.125 UTC [2410] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 01:10:59.128 UTC [2410] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 01:10:59.135 UTC [2412] LOG:  database system was interrupted while in recovery at 2024-04-23 01:10:57 UTC
-2024-04-23 01:10:59.135 UTC [2412] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 01:10:59.352 UTC [2412] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 01:10:59.353 UTC [2412] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 01:10:59.354 UTC [2410] LOG:  startup process (PID 2412) exited with exit code 1
-2024-04-23 01:10:59.354 UTC [2410] LOG:  aborting startup due to startup process failure
-2024-04-23 01:10:59.355 UTC [2410] LOG:  database system is shut down
-2024-04-23 01:11:01.962 UTC [2422] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 01:11:01.962 UTC [2422] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 01:11:01.965 UTC [2422] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 01:11:01.971 UTC [2424] LOG:  database system was interrupted while in recovery at 2024-04-23 01:10:59 UTC
-2024-04-23 01:11:01.971 UTC [2424] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 01:11:02.192 UTC [2424] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 01:11:02.193 UTC [2424] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 01:11:02.194 UTC [2422] LOG:  startup process (PID 2424) exited with exit code 1
-2024-04-23 01:11:02.194 UTC [2422] LOG:  aborting startup due to startup process failure
-2024-04-23 01:11:02.195 UTC [2422] LOG:  database system is shut down
-2024-04-23 01:11:05.816 UTC [2445] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 01:11:05.816 UTC [2445] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 01:11:05.818 UTC [2445] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 01:11:05.825 UTC [2447] LOG:  database system was interrupted while in recovery at 2024-04-23 01:11:02 UTC
-2024-04-23 01:11:05.825 UTC [2447] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 01:11:06.049 UTC [2447] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 01:11:06.049 UTC [2447] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 01:11:06.050 UTC [2445] LOG:  startup process (PID 2447) exited with exit code 1
-2024-04-23 01:11:06.050 UTC [2445] LOG:  aborting startup due to startup process failure
-2024-04-23 01:11:06.051 UTC [2445] LOG:  database system is shut down
-2024-04-23 01:20:30.814 UTC [1511] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 01:20:30.814 UTC [1511] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 01:20:30.822 UTC [1511] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 01:20:30.835 UTC [1549] LOG:  database system was interrupted while in recovery at 2024-04-23 01:11:06 UTC
-2024-04-23 01:20:30.835 UTC [1549] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 01:20:31.181 UTC [1549] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 01:20:31.182 UTC [1549] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 01:20:31.183 UTC [1511] LOG:  startup process (PID 1549) exited with exit code 1
-2024-04-23 01:20:31.183 UTC [1511] LOG:  aborting startup due to startup process failure
-2024-04-23 01:20:31.184 UTC [1511] LOG:  database system is shut down
-2024-04-23 01:20:32.491 UTC [1634] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 01:20:32.492 UTC [1634] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 01:20:32.494 UTC [1634] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 01:20:32.505 UTC [1637] LOG:  database system was interrupted while in recovery at 2024-04-23 01:20:31 UTC
-2024-04-23 01:20:32.505 UTC [1637] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 01:20:32.952 UTC [1637] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 01:20:32.954 UTC [1637] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 01:20:32.955 UTC [1634] LOG:  startup process (PID 1637) exited with exit code 1
-2024-04-23 01:20:32.955 UTC [1634] LOG:  aborting startup due to startup process failure
-2024-04-23 01:20:32.959 UTC [1634] LOG:  database system is shut down
-2024-04-23 01:20:35.672 UTC [1696] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 01:20:35.673 UTC [1696] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 01:20:35.682 UTC [1696] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 01:20:35.697 UTC [1698] LOG:  database system was interrupted while in recovery at 2024-04-23 01:20:32 UTC
-2024-04-23 01:20:35.697 UTC [1698] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 01:20:36.083 UTC [1698] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 01:20:36.083 UTC [1698] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 01:20:36.086 UTC [1696] LOG:  startup process (PID 1698) exited with exit code 1
-2024-04-23 01:20:36.086 UTC [1696] LOG:  aborting startup due to startup process failure
-2024-04-23 01:20:36.089 UTC [1696] LOG:  database system is shut down
-2024-04-23 01:20:40.081 UTC [1777] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 01:20:40.081 UTC [1777] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 01:20:40.084 UTC [1777] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 01:20:40.090 UTC [1779] LOG:  database system was interrupted while in recovery at 2024-04-23 01:20:36 UTC
-2024-04-23 01:20:40.090 UTC [1779] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 01:20:40.304 UTC [1779] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 01:20:40.305 UTC [1779] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 01:20:40.306 UTC [1777] LOG:  startup process (PID 1779) exited with exit code 1
-2024-04-23 01:20:40.306 UTC [1777] LOG:  aborting startup due to startup process failure
-2024-04-23 01:20:40.307 UTC [1777] LOG:  database system is shut down
-2024-04-23 02:54:10.887 UTC [1513] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 02:54:10.888 UTC [1513] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 02:54:10.893 UTC [1513] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 02:54:10.903 UTC [1582] LOG:  database system was interrupted while in recovery at 2024-04-23 01:20:40 UTC
-2024-04-23 02:54:10.903 UTC [1582] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 02:54:11.732 UTC [1582] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 02:54:11.733 UTC [1582] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 02:54:11.739 UTC [1513] LOG:  startup process (PID 1582) exited with exit code 1
-2024-04-23 02:54:11.739 UTC [1513] LOG:  aborting startup due to startup process failure
-2024-04-23 02:54:11.740 UTC [1513] LOG:  database system is shut down
-2024-04-23 02:54:12.144 UTC [1624] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 02:54:12.144 UTC [1624] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 02:54:12.149 UTC [1624] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 02:54:12.177 UTC [1626] LOG:  database system was interrupted while in recovery at 2024-04-23 02:54:11 UTC
-2024-04-23 02:54:12.177 UTC [1626] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 02:54:12.600 UTC [1626] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 02:54:12.600 UTC [1626] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 02:54:12.601 UTC [1624] LOG:  startup process (PID 1626) exited with exit code 1
-2024-04-23 02:54:12.601 UTC [1624] LOG:  aborting startup due to startup process failure
-2024-04-23 02:54:12.602 UTC [1624] LOG:  database system is shut down
-2024-04-23 02:54:13.640 UTC [1652] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 02:54:13.640 UTC [1652] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 02:54:13.641 UTC [1652] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 02:54:13.650 UTC [1657] LOG:  database system was interrupted while in recovery at 2024-04-23 02:54:12 UTC
-2024-04-23 02:54:13.650 UTC [1657] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 02:54:14.142 UTC [1657] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 02:54:14.144 UTC [1657] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 02:54:14.145 UTC [1652] LOG:  startup process (PID 1657) exited with exit code 1
-2024-04-23 02:54:14.145 UTC [1652] LOG:  aborting startup due to startup process failure
-2024-04-23 02:54:14.146 UTC [1652] LOG:  database system is shut down
-2024-04-23 02:54:16.623 UTC [1709] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 02:54:16.624 UTC [1709] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 02:54:16.639 UTC [1709] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 02:54:16.655 UTC [1711] LOG:  database system was interrupted while in recovery at 2024-04-23 02:54:14 UTC
-2024-04-23 02:54:16.655 UTC [1711] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 02:54:17.224 UTC [1711] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 02:54:17.225 UTC [1711] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 02:54:17.226 UTC [1709] LOG:  startup process (PID 1711) exited with exit code 1
-2024-04-23 02:54:17.226 UTC [1709] LOG:  aborting startup due to startup process failure
-2024-04-23 02:54:17.228 UTC [1709] LOG:  database system is shut down
-2024-04-23 02:54:18.048 UTC [1742] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 02:54:18.048 UTC [1742] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 02:54:18.055 UTC [1742] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 02:54:18.065 UTC [1749] LOG:  database system was interrupted while in recovery at 2024-04-23 02:54:17 UTC
-2024-04-23 02:54:18.065 UTC [1749] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 02:54:18.606 UTC [1749] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 02:54:18.609 UTC [1749] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 02:54:18.610 UTC [1742] LOG:  startup process (PID 1749) exited with exit code 1
-2024-04-23 02:54:18.610 UTC [1742] LOG:  aborting startup due to startup process failure
-2024-04-23 02:54:18.611 UTC [1742] LOG:  database system is shut down
-2024-04-23 02:54:19.682 UTC [1775] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 02:54:19.683 UTC [1775] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 02:54:19.688 UTC [1775] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 02:54:19.712 UTC [1777] LOG:  database system was interrupted while in recovery at 2024-04-23 02:54:18 UTC
-2024-04-23 02:54:19.712 UTC [1777] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 02:54:20.141 UTC [1777] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 02:54:20.142 UTC [1777] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 02:54:20.144 UTC [1775] LOG:  startup process (PID 1777) exited with exit code 1
-2024-04-23 02:54:20.144 UTC [1775] LOG:  aborting startup due to startup process failure
-2024-04-23 02:54:20.144 UTC [1775] LOG:  database system is shut down
-2024-04-23 02:54:22.959 UTC [1830] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 02:54:22.959 UTC [1830] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 02:54:22.960 UTC [1830] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 02:54:22.963 UTC [1833] LOG:  database system was interrupted while in recovery at 2024-04-23 02:54:20 UTC
-2024-04-23 02:54:22.963 UTC [1833] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 02:54:23.178 UTC [1833] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 02:54:23.178 UTC [1833] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 02:54:23.180 UTC [1830] LOG:  startup process (PID 1833) exited with exit code 1
-2024-04-23 02:54:23.180 UTC [1830] LOG:  aborting startup due to startup process failure
-2024-04-23 02:54:23.180 UTC [1830] LOG:  database system is shut down
-2024-04-23 02:54:26.224 UTC [1880] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 02:54:26.224 UTC [1880] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 02:54:26.230 UTC [1880] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 02:54:26.236 UTC [1882] LOG:  database system was interrupted while in recovery at 2024-04-23 02:54:23 UTC
-2024-04-23 02:54:26.236 UTC [1882] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 02:54:26.432 UTC [1882] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 02:54:26.433 UTC [1882] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 02:54:26.434 UTC [1880] LOG:  startup process (PID 1882) exited with exit code 1
-2024-04-23 02:54:26.434 UTC [1880] LOG:  aborting startup due to startup process failure
-2024-04-23 02:54:26.435 UTC [1880] LOG:  database system is shut down
-2024-04-23 02:58:07.476 UTC [1512] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 02:58:07.476 UTC [1512] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 02:58:07.478 UTC [1512] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 02:58:07.488 UTC [1546] LOG:  database system was interrupted while in recovery at 2024-04-23 02:54:26 UTC
-2024-04-23 02:58:07.488 UTC [1546] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 02:58:07.761 UTC [1546] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 02:58:07.762 UTC [1546] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 02:58:07.765 UTC [1512] LOG:  startup process (PID 1546) exited with exit code 1
-2024-04-23 02:58:07.765 UTC [1512] LOG:  aborting startup due to startup process failure
-2024-04-23 02:58:07.766 UTC [1512] LOG:  database system is shut down
-2024-04-23 02:58:08.888 UTC [1621] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 02:58:08.888 UTC [1621] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 02:58:08.895 UTC [1621] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 02:58:08.925 UTC [1623] LOG:  database system was interrupted while in recovery at 2024-04-23 02:58:07 UTC
-2024-04-23 02:58:08.925 UTC [1623] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 02:58:09.822 UTC [1623] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 02:58:09.824 UTC [1623] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 02:58:09.827 UTC [1621] LOG:  startup process (PID 1623) exited with exit code 1
-2024-04-23 02:58:09.827 UTC [1621] LOG:  aborting startup due to startup process failure
-2024-04-23 02:58:09.828 UTC [1621] LOG:  database system is shut down
-2024-04-23 02:58:09.886 UTC [1642] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 02:58:09.886 UTC [1642] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 02:58:09.890 UTC [1642] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 02:58:09.926 UTC [1644] LOG:  database system was interrupted while in recovery at 2024-04-23 02:58:09 UTC
-2024-04-23 02:58:09.926 UTC [1644] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 02:58:10.698 UTC [1644] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 02:58:10.699 UTC [1644] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 02:58:10.700 UTC [1642] LOG:  startup process (PID 1644) exited with exit code 1
-2024-04-23 02:58:10.700 UTC [1642] LOG:  aborting startup due to startup process failure
-2024-04-23 02:58:10.700 UTC [1642] LOG:  database system is shut down
-2024-04-23 02:58:11.768 UTC [1673] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 02:58:11.768 UTC [1673] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 02:58:11.804 UTC [1673] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 02:58:11.818 UTC [1680] LOG:  database system was interrupted while in recovery at 2024-04-23 02:58:10 UTC
-2024-04-23 02:58:11.818 UTC [1680] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 02:58:12.231 UTC [1680] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 02:58:12.232 UTC [1680] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 02:58:12.234 UTC [1673] LOG:  startup process (PID 1680) exited with exit code 1
-2024-04-23 02:58:12.234 UTC [1673] LOG:  aborting startup due to startup process failure
-2024-04-23 02:58:12.235 UTC [1673] LOG:  database system is shut down
-2024-04-23 02:58:14.762 UTC [1739] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 02:58:14.762 UTC [1739] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 02:58:14.765 UTC [1739] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 02:58:14.774 UTC [1741] LOG:  database system was interrupted while in recovery at 2024-04-23 02:58:12 UTC
-2024-04-23 02:58:14.774 UTC [1741] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 02:58:15.206 UTC [1741] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 02:58:15.208 UTC [1741] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 02:58:15.209 UTC [1739] LOG:  startup process (PID 1741) exited with exit code 1
-2024-04-23 02:58:15.209 UTC [1739] LOG:  aborting startup due to startup process failure
-2024-04-23 02:58:15.210 UTC [1739] LOG:  database system is shut down
-2024-04-23 02:58:19.230 UTC [1817] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 02:58:19.231 UTC [1817] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 02:58:19.232 UTC [1817] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 02:58:19.238 UTC [1819] LOG:  database system was interrupted while in recovery at 2024-04-23 02:58:15 UTC
-2024-04-23 02:58:19.238 UTC [1819] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 02:58:19.474 UTC [1819] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 02:58:19.474 UTC [1819] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 02:58:19.476 UTC [1817] LOG:  startup process (PID 1819) exited with exit code 1
-2024-04-23 02:58:19.476 UTC [1817] LOG:  aborting startup due to startup process failure
-2024-04-23 02:58:19.477 UTC [1817] LOG:  database system is shut down
-2024-04-23 02:59:18.078 UTC [1517] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 02:59:18.079 UTC [1517] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 02:59:18.085 UTC [1517] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 02:59:18.115 UTC [1550] LOG:  database system was interrupted while in recovery at 2024-04-23 02:58:19 UTC
-2024-04-23 02:59:18.115 UTC [1550] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 02:59:18.536 UTC [1550] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 02:59:18.537 UTC [1550] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 02:59:18.538 UTC [1517] LOG:  startup process (PID 1550) exited with exit code 1
-2024-04-23 02:59:18.538 UTC [1517] LOG:  aborting startup due to startup process failure
-2024-04-23 02:59:18.539 UTC [1517] LOG:  database system is shut down
-2024-04-23 02:59:19.692 UTC [1639] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 02:59:19.692 UTC [1639] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 02:59:19.696 UTC [1639] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 02:59:19.703 UTC [1642] LOG:  database system was interrupted while in recovery at 2024-04-23 02:59:18 UTC
-2024-04-23 02:59:19.703 UTC [1642] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 02:59:20.372 UTC [1642] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 02:59:20.374 UTC [1642] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 02:59:20.377 UTC [1639] LOG:  startup process (PID 1642) exited with exit code 1
-2024-04-23 02:59:20.377 UTC [1639] LOG:  aborting startup due to startup process failure
-2024-04-23 02:59:20.378 UTC [1639] LOG:  database system is shut down
-2024-04-23 02:59:22.485 UTC [1688] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 02:59:22.485 UTC [1688] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 02:59:22.491 UTC [1688] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 02:59:22.507 UTC [1692] LOG:  database system was interrupted while in recovery at 2024-04-23 02:59:20 UTC
-2024-04-23 02:59:22.507 UTC [1692] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 02:59:23.067 UTC [1692] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 02:59:23.069 UTC [1692] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 02:59:23.071 UTC [1688] LOG:  startup process (PID 1692) exited with exit code 1
-2024-04-23 02:59:23.071 UTC [1688] LOG:  aborting startup due to startup process failure
-2024-04-23 02:59:23.072 UTC [1688] LOG:  database system is shut down
-2024-04-23 02:59:26.292 UTC [1763] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 02:59:26.292 UTC [1763] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 02:59:26.296 UTC [1763] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 02:59:26.311 UTC [1765] LOG:  database system was interrupted while in recovery at 2024-04-23 02:59:23 UTC
-2024-04-23 02:59:26.311 UTC [1765] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 02:59:26.576 UTC [1765] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 02:59:26.577 UTC [1765] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 02:59:26.578 UTC [1763] LOG:  startup process (PID 1765) exited with exit code 1
-2024-04-23 02:59:26.578 UTC [1763] LOG:  aborting startup due to startup process failure
-2024-04-23 02:59:26.579 UTC [1763] LOG:  database system is shut down
-2024-04-23 03:00:39.207 UTC [1513] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:00:39.207 UTC [1513] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:00:39.212 UTC [1513] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:00:39.222 UTC [1550] LOG:  database system was interrupted while in recovery at 2024-04-23 02:59:26 UTC
-2024-04-23 03:00:39.222 UTC [1550] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:00:39.586 UTC [1550] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:00:39.586 UTC [1550] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:00:39.587 UTC [1513] LOG:  startup process (PID 1550) exited with exit code 1
-2024-04-23 03:00:39.587 UTC [1513] LOG:  aborting startup due to startup process failure
-2024-04-23 03:00:39.588 UTC [1513] LOG:  database system is shut down
-2024-04-23 03:00:41.151 UTC [1634] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:00:41.151 UTC [1634] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:00:41.153 UTC [1634] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:00:41.165 UTC [1637] LOG:  database system was interrupted while in recovery at 2024-04-23 03:00:39 UTC
-2024-04-23 03:00:41.165 UTC [1637] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:00:42.206 UTC [1637] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:00:42.209 UTC [1637] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:00:42.210 UTC [1634] LOG:  startup process (PID 1637) exited with exit code 1
-2024-04-23 03:00:42.210 UTC [1634] LOG:  aborting startup due to startup process failure
-2024-04-23 03:00:42.211 UTC [1634] LOG:  database system is shut down
-2024-04-23 03:00:42.236 UTC [1657] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:00:42.236 UTC [1657] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:00:42.240 UTC [1657] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:00:42.256 UTC [1664] LOG:  database system was interrupted while in recovery at 2024-04-23 03:00:42 UTC
-2024-04-23 03:00:42.256 UTC [1664] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:00:42.641 UTC [1664] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:00:42.642 UTC [1664] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:00:42.643 UTC [1657] LOG:  startup process (PID 1664) exited with exit code 1
-2024-04-23 03:00:42.643 UTC [1657] LOG:  aborting startup due to startup process failure
-2024-04-23 03:00:42.644 UTC [1657] LOG:  database system is shut down
-2024-04-23 03:00:43.761 UTC [1685] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:00:43.761 UTC [1685] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:00:43.768 UTC [1685] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:00:43.823 UTC [1689] LOG:  database system was interrupted while in recovery at 2024-04-23 03:00:42 UTC
-2024-04-23 03:00:43.823 UTC [1689] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:00:44.303 UTC [1689] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:00:44.304 UTC [1689] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:00:44.308 UTC [1685] LOG:  startup process (PID 1689) exited with exit code 1
-2024-04-23 03:00:44.308 UTC [1685] LOG:  aborting startup due to startup process failure
-2024-04-23 03:00:44.312 UTC [1685] LOG:  database system is shut down
-2024-04-23 03:00:46.454 UTC [1736] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:00:46.455 UTC [1736] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:00:46.461 UTC [1736] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:00:46.477 UTC [1740] LOG:  database system was interrupted while in recovery at 2024-04-23 03:00:44 UTC
-2024-04-23 03:00:46.477 UTC [1740] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:00:46.930 UTC [1740] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:00:46.932 UTC [1740] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:00:46.934 UTC [1736] LOG:  startup process (PID 1740) exited with exit code 1
-2024-04-23 03:00:46.934 UTC [1736] LOG:  aborting startup due to startup process failure
-2024-04-23 03:00:46.936 UTC [1736] LOG:  database system is shut down
-2024-04-23 03:00:50.600 UTC [1806] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:00:50.600 UTC [1806] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:00:50.602 UTC [1806] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:00:50.607 UTC [1808] LOG:  database system was interrupted while in recovery at 2024-04-23 03:00:46 UTC
-2024-04-23 03:00:50.607 UTC [1808] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:00:50.818 UTC [1808] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:00:50.819 UTC [1808] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:00:50.820 UTC [1806] LOG:  startup process (PID 1808) exited with exit code 1
-2024-04-23 03:00:50.820 UTC [1806] LOG:  aborting startup due to startup process failure
-2024-04-23 03:00:50.820 UTC [1806] LOG:  database system is shut down
-2024-04-23 03:04:27.234 UTC [1538] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:04:27.234 UTC [1538] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:04:27.245 UTC [1538] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:04:27.271 UTC [1577] LOG:  database system was interrupted while in recovery at 2024-04-23 03:00:50 UTC
-2024-04-23 03:04:27.271 UTC [1577] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:04:27.580 UTC [1577] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:04:27.581 UTC [1577] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:04:27.581 UTC [1538] LOG:  startup process (PID 1577) exited with exit code 1
-2024-04-23 03:04:27.581 UTC [1538] LOG:  aborting startup due to startup process failure
-2024-04-23 03:04:27.582 UTC [1538] LOG:  database system is shut down
-2024-04-23 03:04:28.838 UTC [1658] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:04:28.838 UTC [1658] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:04:28.846 UTC [1658] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:04:28.862 UTC [1661] LOG:  database system was interrupted while in recovery at 2024-04-23 03:04:27 UTC
-2024-04-23 03:04:28.862 UTC [1661] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:04:29.442 UTC [1661] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:04:29.443 UTC [1661] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:04:29.444 UTC [1658] LOG:  startup process (PID 1661) exited with exit code 1
-2024-04-23 03:04:29.444 UTC [1658] LOG:  aborting startup due to startup process failure
-2024-04-23 03:04:29.445 UTC [1658] LOG:  database system is shut down
-2024-04-23 03:04:32.308 UTC [1726] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:04:32.308 UTC [1726] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:04:32.310 UTC [1726] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:04:32.318 UTC [1728] LOG:  database system was interrupted while in recovery at 2024-04-23 03:04:29 UTC
-2024-04-23 03:04:32.318 UTC [1728] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:04:32.887 UTC [1728] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:04:32.888 UTC [1728] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:04:32.890 UTC [1726] LOG:  startup process (PID 1728) exited with exit code 1
-2024-04-23 03:04:32.890 UTC [1726] LOG:  aborting startup due to startup process failure
-2024-04-23 03:04:32.891 UTC [1726] LOG:  database system is shut down
-2024-04-23 03:04:36.464 UTC [1806] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:04:36.464 UTC [1806] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:04:36.467 UTC [1806] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:04:36.470 UTC [1808] LOG:  database system was interrupted while in recovery at 2024-04-23 03:04:32 UTC
-2024-04-23 03:04:36.470 UTC [1808] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:04:36.681 UTC [1808] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:04:36.681 UTC [1808] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:04:36.682 UTC [1806] LOG:  startup process (PID 1808) exited with exit code 1
-2024-04-23 03:04:36.682 UTC [1806] LOG:  aborting startup due to startup process failure
-2024-04-23 03:04:36.683 UTC [1806] LOG:  database system is shut down
-2024-04-23 03:15:58.279 UTC [1510] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:15:58.279 UTC [1510] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:15:58.281 UTC [1510] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:15:58.289 UTC [1556] LOG:  database system was interrupted while in recovery at 2024-04-23 03:04:36 UTC
-2024-04-23 03:15:58.289 UTC [1556] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:15:58.585 UTC [1556] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:15:58.586 UTC [1556] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:15:58.589 UTC [1510] LOG:  startup process (PID 1556) exited with exit code 1
-2024-04-23 03:15:58.589 UTC [1510] LOG:  aborting startup due to startup process failure
-2024-04-23 03:15:58.590 UTC [1510] LOG:  database system is shut down
-2024-04-23 03:15:59.805 UTC [1629] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:15:59.805 UTC [1629] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:15:59.814 UTC [1629] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:15:59.849 UTC [1636] LOG:  database system was interrupted while in recovery at 2024-04-23 03:15:58 UTC
-2024-04-23 03:15:59.849 UTC [1636] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:16:00.294 UTC [1636] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:16:00.296 UTC [1636] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:16:00.297 UTC [1629] LOG:  startup process (PID 1636) exited with exit code 1
-2024-04-23 03:16:00.297 UTC [1629] LOG:  aborting startup due to startup process failure
-2024-04-23 03:16:00.298 UTC [1629] LOG:  database system is shut down
-2024-04-23 03:16:02.436 UTC [1682] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:16:02.437 UTC [1682] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:16:02.441 UTC [1682] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:16:02.450 UTC [1684] LOG:  database system was interrupted while in recovery at 2024-04-23 03:16:00 UTC
-2024-04-23 03:16:02.450 UTC [1684] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:16:02.795 UTC [1684] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:16:02.797 UTC [1684] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:16:02.800 UTC [1682] LOG:  startup process (PID 1684) exited with exit code 1
-2024-04-23 03:16:02.800 UTC [1682] LOG:  aborting startup due to startup process failure
-2024-04-23 03:16:02.800 UTC [1682] LOG:  database system is shut down
-2024-04-23 03:16:06.532 UTC [1765] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:16:06.533 UTC [1765] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:16:06.536 UTC [1765] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:16:06.557 UTC [1767] LOG:  database system was interrupted while in recovery at 2024-04-23 03:16:02 UTC
-2024-04-23 03:16:06.557 UTC [1767] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:16:06.809 UTC [1767] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:16:06.810 UTC [1767] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:16:06.813 UTC [1765] LOG:  startup process (PID 1767) exited with exit code 1
-2024-04-23 03:16:06.813 UTC [1765] LOG:  aborting startup due to startup process failure
-2024-04-23 03:16:06.814 UTC [1765] LOG:  database system is shut down
-2024-04-23 03:25:03.972 UTC [1519] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:25:03.972 UTC [1519] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:25:03.978 UTC [1519] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:25:03.995 UTC [1555] LOG:  database system was interrupted while in recovery at 2024-04-23 03:16:06 UTC
-2024-04-23 03:25:03.995 UTC [1555] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:25:04.351 UTC [1555] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:25:04.351 UTC [1555] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:25:04.352 UTC [1519] LOG:  startup process (PID 1555) exited with exit code 1
-2024-04-23 03:25:04.352 UTC [1519] LOG:  aborting startup due to startup process failure
-2024-04-23 03:25:04.353 UTC [1519] LOG:  database system is shut down
-2024-04-23 03:25:05.936 UTC [1637] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:25:05.937 UTC [1637] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:25:05.944 UTC [1637] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:25:05.963 UTC [1644] LOG:  database system was interrupted while in recovery at 2024-04-23 03:25:04 UTC
-2024-04-23 03:25:05.963 UTC [1644] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:25:06.712 UTC [1644] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:25:06.715 UTC [1644] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:25:06.717 UTC [1637] LOG:  startup process (PID 1644) exited with exit code 1
-2024-04-23 03:25:06.717 UTC [1637] LOG:  aborting startup due to startup process failure
-2024-04-23 03:25:06.718 UTC [1637] LOG:  database system is shut down
-2024-04-23 03:25:07.128 UTC [1665] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:25:07.128 UTC [1665] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:25:07.131 UTC [1665] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:25:07.138 UTC [1668] LOG:  database system was interrupted while in recovery at 2024-04-23 03:25:06 UTC
-2024-04-23 03:25:07.138 UTC [1668] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:25:07.614 UTC [1668] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:25:07.636 UTC [1668] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:25:07.641 UTC [1665] LOG:  startup process (PID 1668) exited with exit code 1
-2024-04-23 03:25:07.641 UTC [1665] LOG:  aborting startup due to startup process failure
-2024-04-23 03:25:07.643 UTC [1665] LOG:  database system is shut down
-2024-04-23 03:25:08.835 UTC [1689] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:25:08.835 UTC [1689] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:25:08.851 UTC [1689] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:25:08.862 UTC [1693] LOG:  database system was interrupted while in recovery at 2024-04-23 03:25:07 UTC
-2024-04-23 03:25:08.862 UTC [1693] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:25:09.437 UTC [1693] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:25:09.440 UTC [1693] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:25:09.449 UTC [1689] LOG:  startup process (PID 1693) exited with exit code 1
-2024-04-23 03:25:09.450 UTC [1689] LOG:  aborting startup due to startup process failure
-2024-04-23 03:25:09.453 UTC [1689] LOG:  database system is shut down
-2024-04-23 03:25:12.249 UTC [1756] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:25:12.249 UTC [1756] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:25:12.255 UTC [1756] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:25:12.265 UTC [1766] LOG:  database system was interrupted while in recovery at 2024-04-23 03:25:09 UTC
-2024-04-23 03:25:12.265 UTC [1766] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:25:12.835 UTC [1766] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:25:12.836 UTC [1766] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:25:12.839 UTC [1756] LOG:  startup process (PID 1766) exited with exit code 1
-2024-04-23 03:25:12.839 UTC [1756] LOG:  aborting startup due to startup process failure
-2024-04-23 03:25:12.839 UTC [1756] LOG:  database system is shut down
-2024-04-23 03:25:13.936 UTC [1783] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:25:13.936 UTC [1783] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:25:13.937 UTC [1783] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:25:13.941 UTC [1785] LOG:  database system was interrupted while in recovery at 2024-04-23 03:25:12 UTC
-2024-04-23 03:25:13.941 UTC [1785] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:25:14.169 UTC [1785] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:25:14.169 UTC [1785] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:25:14.170 UTC [1783] LOG:  startup process (PID 1785) exited with exit code 1
-2024-04-23 03:25:14.170 UTC [1783] LOG:  aborting startup due to startup process failure
-2024-04-23 03:25:14.171 UTC [1783] LOG:  database system is shut down
-2024-04-23 03:25:15.884 UTC [1819] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:25:15.884 UTC [1819] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:25:15.886 UTC [1819] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:25:15.889 UTC [1825] LOG:  database system was interrupted while in recovery at 2024-04-23 03:25:14 UTC
-2024-04-23 03:25:15.889 UTC [1825] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:25:16.189 UTC [1825] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:25:16.190 UTC [1825] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:25:16.192 UTC [1819] LOG:  startup process (PID 1825) exited with exit code 1
-2024-04-23 03:25:16.192 UTC [1819] LOG:  aborting startup due to startup process failure
-2024-04-23 03:25:16.193 UTC [1819] LOG:  database system is shut down
-2024-04-23 03:25:18.448 UTC [1869] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:25:18.448 UTC [1869] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:25:18.450 UTC [1869] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:25:18.454 UTC [1871] LOG:  database system was interrupted while in recovery at 2024-04-23 03:25:16 UTC
-2024-04-23 03:25:18.454 UTC [1871] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:25:18.676 UTC [1871] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:25:18.677 UTC [1871] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:25:18.678 UTC [1869] LOG:  startup process (PID 1871) exited with exit code 1
-2024-04-23 03:25:18.678 UTC [1869] LOG:  aborting startup due to startup process failure
-2024-04-23 03:25:18.679 UTC [1869] LOG:  database system is shut down
-2024-04-23 03:25:22.490 UTC [1914] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:25:22.490 UTC [1914] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:25:22.492 UTC [1914] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:25:22.498 UTC [1916] LOG:  database system was interrupted while in recovery at 2024-04-23 03:25:18 UTC
-2024-04-23 03:25:22.498 UTC [1916] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:25:22.708 UTC [1916] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:25:22.709 UTC [1916] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:25:22.709 UTC [1914] LOG:  startup process (PID 1916) exited with exit code 1
-2024-04-23 03:25:22.709 UTC [1914] LOG:  aborting startup due to startup process failure
-2024-04-23 03:25:22.710 UTC [1914] LOG:  database system is shut down
-2024-04-23 03:32:24.960 UTC [1514] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:32:24.960 UTC [1514] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:32:24.978 UTC [1514] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:32:24.993 UTC [1534] LOG:  database system was interrupted while in recovery at 2024-04-23 03:25:22 UTC
-2024-04-23 03:32:24.993 UTC [1534] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:32:25.414 UTC [1534] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:32:25.415 UTC [1534] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:32:25.418 UTC [1514] LOG:  startup process (PID 1534) exited with exit code 1
-2024-04-23 03:32:25.418 UTC [1514] LOG:  aborting startup due to startup process failure
-2024-04-23 03:32:25.419 UTC [1514] LOG:  database system is shut down
-2024-04-23 03:32:26.861 UTC [1637] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:32:26.861 UTC [1637] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:32:26.865 UTC [1637] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:32:26.878 UTC [1639] LOG:  database system was interrupted while in recovery at 2024-04-23 03:32:25 UTC
-2024-04-23 03:32:26.878 UTC [1639] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:32:27.651 UTC [1639] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:32:27.653 UTC [1639] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:32:27.657 UTC [1637] LOG:  startup process (PID 1639) exited with exit code 1
-2024-04-23 03:32:27.657 UTC [1637] LOG:  aborting startup due to startup process failure
-2024-04-23 03:32:27.659 UTC [1637] LOG:  database system is shut down
-2024-04-23 03:32:30.056 UTC [1688] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:32:30.057 UTC [1688] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:32:30.062 UTC [1688] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:32:30.078 UTC [1692] LOG:  database system was interrupted while in recovery at 2024-04-23 03:32:27 UTC
-2024-04-23 03:32:30.078 UTC [1692] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:32:30.843 UTC [1692] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:32:30.847 UTC [1692] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:32:30.851 UTC [1688] LOG:  startup process (PID 1692) exited with exit code 1
-2024-04-23 03:32:30.851 UTC [1688] LOG:  aborting startup due to startup process failure
-2024-04-23 03:32:30.852 UTC [1688] LOG:  database system is shut down
-2024-04-23 03:32:34.678 UTC [1766] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:32:34.679 UTC [1766] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:32:34.700 UTC [1766] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:32:34.738 UTC [1773] LOG:  database system was interrupted while in recovery at 2024-04-23 03:32:30 UTC
-2024-04-23 03:32:34.738 UTC [1773] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:32:35.673 UTC [1773] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:32:35.684 UTC [1773] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:32:35.688 UTC [1766] LOG:  startup process (PID 1773) exited with exit code 1
-2024-04-23 03:32:35.688 UTC [1766] LOG:  aborting startup due to startup process failure
-2024-04-23 03:32:35.689 UTC [1766] LOG:  database system is shut down
-2024-04-23 03:32:35.754 UTC [1783] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:32:35.754 UTC [1783] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:32:35.764 UTC [1783] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:32:35.782 UTC [1791] LOG:  database system was interrupted while in recovery at 2024-04-23 03:32:35 UTC
-2024-04-23 03:32:35.782 UTC [1791] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:32:36.654 UTC [1791] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:32:36.655 UTC [1791] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:32:36.657 UTC [1783] LOG:  startup process (PID 1791) exited with exit code 1
-2024-04-23 03:32:36.657 UTC [1783] LOG:  aborting startup due to startup process failure
-2024-04-23 03:32:36.658 UTC [1783] LOG:  database system is shut down
-2024-04-23 03:32:38.526 UTC [1837] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:32:38.526 UTC [1837] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:32:38.537 UTC [1837] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:32:38.543 UTC [1845] LOG:  database system was interrupted while in recovery at 2024-04-23 03:32:36 UTC
-2024-04-23 03:32:38.543 UTC [1845] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:32:38.990 UTC [1845] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:32:38.990 UTC [1845] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:32:38.992 UTC [1837] LOG:  startup process (PID 1845) exited with exit code 1
-2024-04-23 03:32:38.992 UTC [1837] LOG:  aborting startup due to startup process failure
-2024-04-23 03:32:38.993 UTC [1837] LOG:  database system is shut down
-2024-04-23 03:32:41.029 UTC [1871] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:32:41.029 UTC [1871] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:32:41.035 UTC [1871] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:32:41.040 UTC [1873] LOG:  database system was interrupted while in recovery at 2024-04-23 03:32:38 UTC
-2024-04-23 03:32:41.040 UTC [1873] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:32:41.357 UTC [1873] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:32:41.358 UTC [1873] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:32:41.362 UTC [1871] LOG:  startup process (PID 1873) exited with exit code 1
-2024-04-23 03:32:41.362 UTC [1871] LOG:  aborting startup due to startup process failure
-2024-04-23 03:32:41.363 UTC [1871] LOG:  database system is shut down
-2024-04-23 03:32:44.649 UTC [1918] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:32:44.649 UTC [1918] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:32:44.651 UTC [1918] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:32:44.657 UTC [1922] LOG:  database system was interrupted while in recovery at 2024-04-23 03:32:41 UTC
-2024-04-23 03:32:44.657 UTC [1922] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:32:44.863 UTC [1922] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:32:44.864 UTC [1922] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:32:44.865 UTC [1918] LOG:  startup process (PID 1922) exited with exit code 1
-2024-04-23 03:32:44.865 UTC [1918] LOG:  aborting startup due to startup process failure
-2024-04-23 03:32:44.866 UTC [1918] LOG:  database system is shut down
-2024-04-23 03:43:48.407 UTC [1517] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:43:48.407 UTC [1517] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:43:48.416 UTC [1517] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:43:48.429 UTC [1552] LOG:  database system was interrupted while in recovery at 2024-04-23 03:32:44 UTC
-2024-04-23 03:43:48.429 UTC [1552] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:43:48.759 UTC [1552] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:43:48.760 UTC [1552] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:43:48.762 UTC [1517] LOG:  startup process (PID 1552) exited with exit code 1
-2024-04-23 03:43:48.762 UTC [1517] LOG:  aborting startup due to startup process failure
-2024-04-23 03:43:48.762 UTC [1517] LOG:  database system is shut down
-2024-04-23 03:43:49.835 UTC [1628] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:43:49.836 UTC [1628] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:43:49.845 UTC [1628] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:43:49.877 UTC [1630] LOG:  database system was interrupted while in recovery at 2024-04-23 03:43:48 UTC
-2024-04-23 03:43:49.877 UTC [1630] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:43:50.220 UTC [1630] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:43:50.221 UTC [1630] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:43:50.222 UTC [1628] LOG:  startup process (PID 1630) exited with exit code 1
-2024-04-23 03:43:50.222 UTC [1628] LOG:  aborting startup due to startup process failure
-2024-04-23 03:43:50.223 UTC [1628] LOG:  database system is shut down
-2024-04-23 03:43:52.412 UTC [1674] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:43:52.412 UTC [1674] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:43:52.421 UTC [1674] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:43:52.440 UTC [1683] LOG:  database system was interrupted while in recovery at 2024-04-23 03:43:50 UTC
-2024-04-23 03:43:52.440 UTC [1683] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:43:52.920 UTC [1683] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:43:52.922 UTC [1683] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:43:52.924 UTC [1674] LOG:  startup process (PID 1683) exited with exit code 1
-2024-04-23 03:43:52.924 UTC [1674] LOG:  aborting startup due to startup process failure
-2024-04-23 03:43:52.925 UTC [1674] LOG:  database system is shut down
-2024-04-23 03:43:56.682 UTC [1758] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:43:56.682 UTC [1758] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:43:56.689 UTC [1758] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:43:56.717 UTC [1760] LOG:  database system was interrupted while in recovery at 2024-04-23 03:43:52 UTC
-2024-04-23 03:43:56.717 UTC [1760] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:43:56.986 UTC [1760] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:43:56.986 UTC [1760] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:43:56.987 UTC [1758] LOG:  startup process (PID 1760) exited with exit code 1
-2024-04-23 03:43:56.987 UTC [1758] LOG:  aborting startup due to startup process failure
-2024-04-23 03:43:56.988 UTC [1758] LOG:  database system is shut down
-2024-04-23 03:49:32.294 UTC [1520] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:49:32.294 UTC [1520] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:49:32.300 UTC [1520] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:49:32.311 UTC [1558] LOG:  database system was interrupted while in recovery at 2024-04-23 03:43:56 UTC
-2024-04-23 03:49:32.311 UTC [1558] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:49:32.658 UTC [1558] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:49:32.659 UTC [1558] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:49:32.660 UTC [1520] LOG:  startup process (PID 1558) exited with exit code 1
-2024-04-23 03:49:32.660 UTC [1520] LOG:  aborting startup due to startup process failure
-2024-04-23 03:49:32.660 UTC [1520] LOG:  database system is shut down
-2024-04-23 03:49:33.722 UTC [1635] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:49:33.722 UTC [1635] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:49:33.726 UTC [1635] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:49:33.737 UTC [1642] LOG:  database system was interrupted while in recovery at 2024-04-23 03:49:32 UTC
-2024-04-23 03:49:33.737 UTC [1642] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:49:34.133 UTC [1642] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:49:34.134 UTC [1642] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:49:34.136 UTC [1635] LOG:  startup process (PID 1642) exited with exit code 1
-2024-04-23 03:49:34.136 UTC [1635] LOG:  aborting startup due to startup process failure
-2024-04-23 03:49:34.137 UTC [1635] LOG:  database system is shut down
-2024-04-23 03:49:36.426 UTC [1694] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:49:36.426 UTC [1694] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:49:36.429 UTC [1694] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:49:36.439 UTC [1696] LOG:  database system was interrupted while in recovery at 2024-04-23 03:49:34 UTC
-2024-04-23 03:49:36.439 UTC [1696] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:49:36.855 UTC [1696] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:49:36.856 UTC [1696] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:49:36.858 UTC [1694] LOG:  startup process (PID 1696) exited with exit code 1
-2024-04-23 03:49:36.858 UTC [1694] LOG:  aborting startup due to startup process failure
-2024-04-23 03:49:36.859 UTC [1694] LOG:  database system is shut down
-2024-04-23 03:49:39.945 UTC [1757] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
-2024-04-23 03:49:39.945 UTC [1757] LOG:  listening on IPv4 address "127.0.0.1", port 5432
-2024-04-23 03:49:39.951 UTC [1757] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
-2024-04-23 03:49:39.962 UTC [1759] LOG:  database system was interrupted while in recovery at 2024-04-23 03:49:36 UTC
-2024-04-23 03:49:39.962 UTC [1759] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
-2024-04-23 03:49:40.110 UTC [1759] LOG:  database system was not properly shut down; automatic recovery in progress
-2024-04-23 03:49:40.111 UTC [1759] FATAL:  could not open directory "pg_stat": No such file or directory
-2024-04-23 03:49:40.112 UTC [1757] LOG:  startup process (PID 1759) exited with exit code 1
-2024-04-23 03:49:40.112 UTC [1757] LOG:  aborting startup due to startup process failure
-2024-04-23 03:49:40.113 UTC [1757] LOG:  database system is shut down
+2024-04-26 02:06:45.845 UTC [1760] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
+2024-04-26 02:06:45.845 UTC [1760] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-04-26 02:06:45.855 UTC [1760] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
+2024-04-26 02:06:45.879 UTC [1790] LOG:  database system was shut down at 2024-04-26 02:06:45 UTC
+2024-04-26 02:06:45.906 UTC [1760] LOG:  database system is ready to accept connections
+2024-04-26 02:35:57.477 UTC [1760] LOG:  received smart shutdown request
+2024-04-26 02:35:57.496 UTC [1760] LOG:  background worker "logical replication launcher" (PID 1805) exited with exit code 1
+2024-04-26 02:35:57.496 UTC [1800] LOG:  shutting down
+2024-04-26 02:35:57.505 UTC [1760] LOG:  database system is shut down
+2024-04-26 02:38:00.464 UTC [1511] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
+2024-04-26 02:38:00.464 UTC [1511] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-04-26 02:38:00.468 UTC [1511] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
+2024-04-26 02:38:00.473 UTC [1577] LOG:  database system was shut down at 2024-04-26 02:35:57 UTC
+2024-04-26 02:38:00.484 UTC [1511] LOG:  database system is ready to accept connections
+2024-04-26 02:43:00.526 UTC [1511] LOG:  received smart shutdown request
+2024-04-26 02:43:00.624 UTC [1511] LOG:  background worker "logical replication launcher" (PID 1583) exited with exit code 1
+2024-04-26 02:43:00.632 UTC [1578] LOG:  shutting down
+2024-04-26 02:43:00.656 UTC [1511] LOG:  database system is shut down
+2024-04-26 02:43:17.460 UTC [1518] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
+2024-04-26 02:43:17.460 UTC [1518] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-04-26 02:43:17.467 UTC [1518] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
+2024-04-26 02:43:17.481 UTC [1559] LOG:  database system was shut down at 2024-04-26 02:43:00 UTC
+2024-04-26 02:43:17.501 UTC [1518] LOG:  database system is ready to accept connections
+2024-04-26 03:06:07.015 UTC [1518] LOG:  received smart shutdown request
+2024-04-26 03:06:07.043 UTC [1518] LOG:  background worker "logical replication launcher" (PID 1566) exited with exit code 1
+2024-04-26 03:06:07.043 UTC [1561] LOG:  shutting down
+2024-04-26 03:06:07.067 UTC [1518] LOG:  database system is shut down
+2024-04-26 03:06:36.284 UTC [1515] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
+2024-04-26 03:06:36.285 UTC [1515] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-04-26 03:06:36.406 UTC [1515] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
+2024-04-26 03:06:36.416 UTC [1567] LOG:  database system was shut down at 2024-04-26 03:06:07 UTC
+2024-04-26 03:06:36.431 UTC [1515] LOG:  database system is ready to accept connections
+2024-04-26 03:10:16.286 UTC [1515] LOG:  received smart shutdown request
+2024-04-26 03:10:16.303 UTC [1515] LOG:  background worker "logical replication launcher" (PID 1574) exited with exit code 1
+2024-04-26 03:10:16.304 UTC [1569] LOG:  shutting down
+2024-04-26 03:10:16.323 UTC [1515] LOG:  database system is shut down
+2024-04-26 03:15:10.472 UTC [1519] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
+2024-04-26 03:15:10.472 UTC [1519] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-04-26 03:15:10.476 UTC [1519] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
+2024-04-26 03:15:10.487 UTC [1568] LOG:  database system was shut down at 2024-04-26 03:10:16 UTC
+2024-04-26 03:15:10.497 UTC [1519] LOG:  database system is ready to accept connections
+2024-04-26 03:22:11.729 UTC [1519] LOG:  received smart shutdown request
+2024-04-26 03:22:11.738 UTC [1519] LOG:  background worker "logical replication launcher" (PID 1575) exited with exit code 1
+2024-04-26 03:22:11.738 UTC [1570] LOG:  shutting down
+2024-04-26 03:22:11.747 UTC [1519] LOG:  database system is shut down
+2024-04-26 03:22:19.849 UTC [1523] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
+2024-04-26 03:22:19.849 UTC [1523] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-04-26 03:22:19.854 UTC [1523] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
+2024-04-26 03:22:19.862 UTC [1551] LOG:  database system was shut down at 2024-04-26 03:22:11 UTC
+2024-04-26 03:22:19.870 UTC [1523] LOG:  database system is ready to accept connections
+2024-04-26 03:22:43.614 UTC [1523] LOG:  received smart shutdown request
+2024-04-26 03:22:43.627 UTC [1523] LOG:  background worker "logical replication launcher" (PID 1567) exited with exit code 1
+2024-04-26 03:22:43.629 UTC [1562] LOG:  shutting down
+2024-04-26 03:22:43.647 UTC [1523] LOG:  database system is shut down
+2024-04-26 03:22:53.333 UTC [1522] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
+2024-04-26 03:22:53.333 UTC [1522] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-04-26 03:22:53.338 UTC [1522] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
+2024-04-26 03:22:53.345 UTC [1560] LOG:  database system was shut down at 2024-04-26 03:22:43 UTC
+2024-04-26 03:22:53.358 UTC [1522] LOG:  database system is ready to accept connections
+2024-04-26 03:23:18.377 UTC [1522] LOG:  received smart shutdown request
+2024-04-26 03:23:18.388 UTC [1522] LOG:  background worker "logical replication launcher" (PID 1576) exited with exit code 1
+2024-04-26 03:23:18.388 UTC [1571] LOG:  shutting down
+2024-04-26 03:23:18.403 UTC [1522] LOG:  database system is shut down
+2024-04-26 03:26:08.309 UTC [1516] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
+2024-04-26 03:26:08.309 UTC [1516] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-04-26 03:26:08.312 UTC [1516] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
+2024-04-26 03:26:08.326 UTC [1561] LOG:  database system was shut down at 2024-04-26 03:23:18 UTC
+2024-04-26 03:26:08.341 UTC [1516] LOG:  database system is ready to accept connections
+2024-04-26 03:27:04.178 UTC [1516] LOG:  received smart shutdown request
+2024-04-26 03:27:04.183 UTC [1516] LOG:  background worker "logical replication launcher" (PID 1571) exited with exit code 1
+2024-04-26 03:27:04.184 UTC [1566] LOG:  shutting down
+2024-04-26 03:27:04.193 UTC [1516] LOG:  database system is shut down
+2024-04-26 03:27:16.570 UTC [1522] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
+2024-04-26 03:27:16.571 UTC [1522] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-04-26 03:27:16.575 UTC [1522] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
+2024-04-26 03:27:16.591 UTC [1558] LOG:  database system was shut down at 2024-04-26 03:27:04 UTC
+2024-04-26 03:27:16.602 UTC [1522] LOG:  database system is ready to accept connections
+2024-04-26 03:28:32.648 UTC [1522] LOG:  received smart shutdown request
+2024-04-26 03:28:32.661 UTC [1522] LOG:  background worker "logical replication launcher" (PID 1576) exited with exit code 1
+2024-04-26 03:28:32.662 UTC [1570] LOG:  shutting down
+2024-04-26 03:28:32.684 UTC [1522] LOG:  database system is shut down
+2024-04-26 03:28:40.922 UTC [1521] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
+2024-04-26 03:28:40.922 UTC [1521] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-04-26 03:28:40.927 UTC [1521] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
+2024-04-26 03:28:40.943 UTC [1559] LOG:  database system was shut down at 2024-04-26 03:28:32 UTC
+2024-04-26 03:28:40.951 UTC [1521] LOG:  database system is ready to accept connections
+2024-04-26 03:53:38.889 UTC [1521] LOG:  received smart shutdown request
+2024-04-26 03:53:38.898 UTC [1521] LOG:  background worker "logical replication launcher" (PID 1568) exited with exit code 1
+2024-04-26 03:53:38.898 UTC [1563] LOG:  shutting down
+2024-04-26 03:53:38.912 UTC [1521] LOG:  database system is shut down
+2024-04-26 03:53:52.625 UTC [1515] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
+2024-04-26 03:53:52.625 UTC [1515] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-04-26 03:53:52.629 UTC [1515] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
+2024-04-26 03:53:52.635 UTC [1558] LOG:  database system was shut down at 2024-04-26 03:53:38 UTC
+2024-04-26 03:53:52.641 UTC [1515] LOG:  database system is ready to accept connections
+2024-04-26 04:01:39.875 UTC [1515] LOG:  received smart shutdown request
+2024-04-26 04:01:39.880 UTC [1515] LOG:  background worker "logical replication launcher" (PID 1570) exited with exit code 1
+2024-04-26 04:01:39.880 UTC [1565] LOG:  shutting down
+2024-04-26 04:01:39.894 UTC [1515] LOG:  database system is shut down
+2024-04-26 04:01:53.490 UTC [1514] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
+2024-04-26 04:01:53.490 UTC [1514] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-04-26 04:01:53.493 UTC [1514] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
+2024-04-26 04:01:53.499 UTC [1559] LOG:  database system was shut down at 2024-04-26 04:01:39 UTC
+2024-04-26 04:01:53.508 UTC [1514] LOG:  database system is ready to accept connections
+2024-04-26 04:04:25.962 UTC [1514] LOG:  received smart shutdown request
+2024-04-26 04:04:25.969 UTC [1514] LOG:  background worker "logical replication launcher" (PID 1573) exited with exit code 1
+2024-04-26 04:04:25.970 UTC [1568] LOG:  shutting down
+2024-04-26 04:04:25.988 UTC [1514] LOG:  database system is shut down
+2024-04-26 04:04:32.902 UTC [1519] LOG:  starting PostgreSQL 13.14 (Ubuntu 13.14-1.pgdg20.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
+2024-04-26 04:04:32.902 UTC [1519] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-04-26 04:04:32.906 UTC [1519] LOG:  listening on Unix socket "/tmp/appsmith/pg-runtime/.s.PGSQL.5432"
+2024-04-26 04:04:32.917 UTC [1553] LOG:  database system was shut down at 2024-04-26 04:04:25 UTC
+2024-04-26 04:04:32.926 UTC [1519] LOG:  database system is ready to accept connections

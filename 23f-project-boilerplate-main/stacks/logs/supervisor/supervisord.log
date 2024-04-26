@@ -1,750 +1,490 @@
-2024-04-21 20:29:04,633 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
-2024-04-21 20:29:04,634 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
-2024-04-21 20:29:04,634 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
-2024-04-21 20:29:04,634 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
-2024-04-21 20:29:04,634 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
-2024-04-21 20:29:04,634 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
-2024-04-21 20:29:04,634 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
-2024-04-21 20:29:04,688 INFO RPC interface 'supervisor' initialized
-2024-04-21 20:29:04,694 INFO RPC interface 'supervisor' initialized
-2024-04-21 20:29:04,694 CRIT Server 'unix_http_server' running without any HTTP authentication checking
-2024-04-21 20:29:04,695 INFO supervisord started with pid 1
-2024-04-21 20:29:05,719 INFO spawned: 'stdout' with pid 1779
-2024-04-21 20:29:05,750 INFO spawned: 'redis' with pid 1780
-2024-04-21 20:29:05,775 INFO spawned: 'mongodb' with pid 1781
-2024-04-21 20:29:05,797 INFO spawned: 'rts' with pid 1782
-2024-04-21 20:29:05,825 INFO spawned: 'backend' with pid 1783
-2024-04-21 20:29:05,842 INFO spawned: 'editor' with pid 1785
-2024-04-21 20:29:05,865 INFO spawned: 'postgres' with pid 1788
-2024-04-21 20:29:05,918 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-21 20:29:05,918 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-21 20:29:05,918 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-21 20:29:07,008 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2024-04-21 20:29:07,009 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2024-04-21 20:29:08,729 INFO reaped unknown pid 51
-2024-04-21 20:29:15,687 INFO reaped unknown pid 94
-2024-04-21 20:29:16,043 INFO success: mongodb entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
-2024-04-21 20:29:25,819 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
-2024-04-21 20:30:09,251 WARN received SIGTERM indicating exit request
-2024-04-21 20:30:09,267 INFO waiting for stdout, redis, mongodb, rts, backend, editor, postgres to die
-2024-04-21 20:30:09,603 INFO stopped: postgres (exit status 0)
-2024-04-21 20:30:09,623 INFO stopped: editor (exit status 2)
-2024-04-21 20:30:13,254 INFO waiting for stdout, redis, mongodb, rts, backend to die
-2024-04-21 20:30:15,806 INFO reaped unknown pid 1898
-2024-04-21 20:30:16,208 INFO stopped: backend (exit status 143)
-2024-04-21 20:30:16,236 INFO stopped: rts (terminated by SIGTERM)
-2024-04-21 20:30:16,621 INFO stopped: mongodb (exit status 0)
-2024-04-21 20:30:16,621 INFO waiting for stdout, redis to die
-2024-04-21 20:30:16,684 INFO stopped: redis (exit status 0)
-2024-04-21 20:30:16,685 INFO stopped: stdout (terminated by SIGTERM)
-2024-04-21 20:30:56,582 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
-2024-04-21 20:30:56,585 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
-2024-04-21 20:30:56,586 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
-2024-04-21 20:30:56,587 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
-2024-04-21 20:30:56,588 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
-2024-04-21 20:30:56,588 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
-2024-04-21 20:30:56,588 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
-2024-04-21 20:30:56,674 INFO RPC interface 'supervisor' initialized
-2024-04-21 20:30:56,681 INFO RPC interface 'supervisor' initialized
-2024-04-21 20:30:56,682 CRIT Server 'unix_http_server' running without any HTTP authentication checking
-2024-04-21 20:30:56,684 INFO supervisord started with pid 1
-2024-04-21 20:30:57,296 INFO spawned: 'stdout' with pid 1507
-2024-04-21 20:30:57,302 INFO spawned: 'redis' with pid 1508
-2024-04-21 20:30:57,306 INFO spawned: 'mongodb' with pid 1509
-2024-04-21 20:30:57,311 INFO spawned: 'rts' with pid 1510
-2024-04-21 20:30:57,318 INFO spawned: 'backend' with pid 1511
-2024-04-21 20:30:57,325 INFO spawned: 'editor' with pid 1513
-2024-04-21 20:30:57,330 INFO spawned: 'postgres' with pid 1514
-2024-04-21 20:30:57,350 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-21 20:30:57,350 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-21 20:30:57,352 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-21 20:30:59,105 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2024-04-21 20:31:03,136 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2024-04-21 20:31:05,821 INFO reaped unknown pid 54
-2024-04-21 20:31:08,219 INFO success: mongodb entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
-2024-04-21 20:31:17,751 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
-2024-04-21 20:31:39,328 INFO reaped unknown pid 81
-2024-04-22 11:18:16,608 WARN received SIGTERM indicating exit request
-2024-04-22 11:18:16,617 INFO waiting for stdout, redis, mongodb, rts, backend, editor, postgres to die
-2024-04-22 11:18:16,820 INFO stopped: postgres (exit status 0)
-2024-04-22 11:18:16,832 INFO stopped: editor (exit status 2)
-2024-04-22 11:18:20,540 INFO waiting for stdout, redis, mongodb, rts, backend to die
-2024-04-22 11:18:23,557 INFO waiting for stdout, redis, mongodb, rts, backend to die
-2024-04-22 11:18:23,660 INFO reaped unknown pid 1615
-2024-04-22 11:18:24,666 INFO stopped: backend (exit status 143)
-2024-04-22 11:18:25,707 INFO stopped: rts (terminated by SIGTERM)
-2024-04-22 11:18:32,110 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
-2024-04-22 11:18:32,110 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
-2024-04-22 11:18:32,111 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
-2024-04-22 11:18:32,111 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
-2024-04-22 11:18:32,111 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
-2024-04-22 11:18:32,111 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
-2024-04-22 11:18:32,111 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
-2024-04-22 11:18:32,118 INFO RPC interface 'supervisor' initialized
-2024-04-22 11:18:32,421 INFO RPC interface 'supervisor' initialized
-2024-04-22 11:18:32,421 CRIT Server 'unix_http_server' running without any HTTP authentication checking
-2024-04-22 11:18:32,422 INFO supervisord started with pid 1
-2024-04-22 11:18:33,446 INFO spawned: 'stdout' with pid 1527
-2024-04-22 11:18:33,452 INFO spawned: 'redis' with pid 1528
-2024-04-22 11:18:33,457 INFO spawned: 'mongodb' with pid 1529
-2024-04-22 11:18:33,460 INFO spawned: 'rts' with pid 1530
-2024-04-22 11:18:33,466 INFO spawned: 'backend' with pid 1531
-2024-04-22 11:18:33,479 INFO spawned: 'editor' with pid 1534
-2024-04-22 11:18:33,494 INFO spawned: 'postgres' with pid 1536
-2024-04-22 11:18:33,519 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-22 11:18:33,522 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-22 11:18:33,525 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-22 11:18:33,722 INFO reaped unknown pid 54
-2024-04-22 11:18:34,588 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2024-04-22 11:18:34,590 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2024-04-22 11:18:37,717 INFO reaped unknown pid 80
-2024-04-22 11:18:43,695 INFO success: mongodb entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
-2024-04-22 11:18:53,488 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
-2024-04-22 11:31:16,103 WARN received SIGTERM indicating exit request
-2024-04-22 11:31:16,114 INFO waiting for stdout, redis, mongodb, rts, backend, editor, postgres to die
-2024-04-22 11:31:17,181 INFO stopped: postgres (exit status 0)
-2024-04-22 11:31:17,214 INFO stopped: editor (exit status 2)
-2024-04-22 11:31:19,490 INFO waiting for stdout, redis, mongodb, rts, backend to die
-2024-04-22 11:31:22,273 INFO stopped: backend (exit status 143)
-2024-04-22 11:31:22,274 INFO reaped unknown pid 1629
-2024-04-22 11:31:22,281 INFO stopped: rts (terminated by SIGTERM)
-2024-04-22 11:31:23,204 INFO stopped: mongodb (exit status 0)
-2024-04-22 11:31:23,205 INFO waiting for stdout, redis to die
-2024-04-22 11:31:23,262 INFO stopped: redis (exit status 0)
-2024-04-22 11:31:23,263 INFO stopped: stdout (terminated by SIGTERM)
-2024-04-22 11:46:26,577 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
-2024-04-22 11:46:26,577 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
-2024-04-22 11:46:26,577 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
-2024-04-22 11:46:26,577 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
-2024-04-22 11:46:26,578 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
-2024-04-22 11:46:26,578 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
-2024-04-22 11:46:26,578 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
-2024-04-22 11:46:26,592 INFO RPC interface 'supervisor' initialized
-2024-04-22 11:46:26,593 INFO RPC interface 'supervisor' initialized
-2024-04-22 11:46:26,593 CRIT Server 'unix_http_server' running without any HTTP authentication checking
-2024-04-22 11:46:26,594 INFO supervisord started with pid 1
-2024-04-22 11:46:26,901 INFO spawned: 'stdout' with pid 1507
-2024-04-22 11:46:26,902 INFO spawned: 'redis' with pid 1508
-2024-04-22 11:46:26,903 INFO spawned: 'mongodb' with pid 1509
-2024-04-22 11:46:26,904 INFO spawned: 'rts' with pid 1510
-2024-04-22 11:46:26,907 INFO spawned: 'backend' with pid 1511
-2024-04-22 11:46:26,910 INFO spawned: 'editor' with pid 1516
-2024-04-22 11:46:26,912 INFO spawned: 'postgres' with pid 1518
-2024-04-22 11:46:26,923 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-22 11:46:26,924 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-22 11:46:26,924 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-22 11:46:27,076 INFO reaped unknown pid 58
-2024-04-22 11:46:27,962 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2024-04-22 11:46:27,962 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2024-04-22 11:46:30,995 INFO reaped unknown pid 86
-2024-04-22 11:46:37,020 INFO success: mongodb entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
-2024-04-22 11:46:47,002 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
-2024-04-22 22:02:11,665 WARN received SIGTERM indicating exit request
-2024-04-22 22:02:11,670 INFO waiting for stdout, redis, mongodb, rts, backend, editor, postgres to die
-2024-04-22 22:02:12,875 INFO stopped: postgres (exit status 0)
-2024-04-22 22:02:12,908 INFO stopped: editor (exit status 2)
-2024-04-22 22:02:15,317 INFO waiting for stdout, redis, mongodb, rts, backend to die
-2024-04-22 22:02:18,843 INFO waiting for stdout, redis, mongodb, rts, backend to die
-2024-04-22 22:02:19,248 INFO reaped unknown pid 1604
-2024-04-22 22:02:20,256 INFO stopped: backend (exit status 143)
-2024-04-22 22:02:20,287 INFO stopped: rts (terminated by SIGTERM)
-2024-04-22 22:02:21,211 INFO stopped: mongodb (exit status 0)
-2024-04-22 22:02:21,212 WARN received SIGTERM indicating exit request
-2024-04-22 22:02:21,242 INFO stopped: redis (exit status 0)
-2024-04-22 22:02:21,243 INFO stopped: stdout (terminated by SIGTERM)
-2024-04-22 22:02:59,423 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
-2024-04-22 22:02:59,424 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
-2024-04-22 22:02:59,424 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
-2024-04-22 22:02:59,424 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
-2024-04-22 22:02:59,424 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
-2024-04-22 22:02:59,425 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
-2024-04-22 22:02:59,425 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
-2024-04-22 22:02:59,440 INFO RPC interface 'supervisor' initialized
-2024-04-22 22:02:59,441 INFO RPC interface 'supervisor' initialized
-2024-04-22 22:02:59,442 CRIT Server 'unix_http_server' running without any HTTP authentication checking
-2024-04-22 22:02:59,443 INFO supervisord started with pid 1
-2024-04-22 22:03:00,347 INFO spawned: 'stdout' with pid 1503
-2024-04-22 22:03:00,349 INFO spawned: 'redis' with pid 1504
-2024-04-22 22:03:00,352 INFO spawned: 'mongodb' with pid 1505
-2024-04-22 22:03:00,360 INFO spawned: 'rts' with pid 1506
-2024-04-22 22:03:00,363 INFO spawned: 'backend' with pid 1507
-2024-04-22 22:03:00,367 INFO spawned: 'editor' with pid 1508
-2024-04-22 22:03:00,372 INFO spawned: 'postgres' with pid 1514
-2024-04-22 22:03:00,385 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-22 22:03:00,385 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-22 22:03:00,385 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-22 22:03:00,663 INFO reaped unknown pid 54
-2024-04-22 22:03:01,466 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2024-04-22 22:03:01,468 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2024-04-22 22:03:05,753 INFO reaped unknown pid 81
-2024-04-22 22:03:10,697 INFO success: mongodb entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
-2024-04-22 22:03:20,462 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
-2024-04-23 01:20:30,360 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
-2024-04-23 01:20:30,360 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
-2024-04-23 01:20:30,360 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
-2024-04-23 01:20:30,360 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
-2024-04-23 01:20:30,360 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
-2024-04-23 01:20:30,360 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
-2024-04-23 01:20:30,360 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
-2024-04-23 01:20:30,364 INFO RPC interface 'supervisor' initialized
-2024-04-23 01:20:30,364 INFO RPC interface 'supervisor' initialized
-2024-04-23 01:20:30,364 CRIT Server 'unix_http_server' running without any HTTP authentication checking
-2024-04-23 01:20:30,364 INFO supervisord started with pid 1
-2024-04-23 01:20:30,766 INFO spawned: 'stdout' with pid 1503
-2024-04-23 01:20:30,768 INFO spawned: 'redis' with pid 1504
-2024-04-23 01:20:30,769 INFO spawned: 'mongodb' with pid 1505
-2024-04-23 01:20:30,771 INFO spawned: 'rts' with pid 1506
-2024-04-23 01:20:30,772 INFO spawned: 'backend' with pid 1507
-2024-04-23 01:20:30,774 INFO spawned: 'editor' with pid 1508
-2024-04-23 01:20:30,777 INFO spawned: 'postgres' with pid 1511
-2024-04-23 01:20:30,782 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 01:20:30,783 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 01:20:30,784 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 01:20:30,903 INFO reaped unknown pid 55
-2024-04-23 01:20:31,184 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 01:20:31,601 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 01:20:31,816 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2024-04-23 01:20:32,464 INFO spawned: 'postgres' with pid 1634
-2024-04-23 01:20:32,954 INFO spawned: 'mongodb' with pid 1642
-2024-04-23 01:20:32,962 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 01:20:34,204 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 01:20:35,646 INFO spawned: 'postgres' with pid 1696
-2024-04-23 01:20:36,091 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 01:20:36,207 INFO spawned: 'mongodb' with pid 1713
-2024-04-23 01:20:37,806 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 01:20:40,047 INFO spawned: 'postgres' with pid 1777
-2024-04-23 01:20:40,307 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 01:20:41,087 INFO spawned: 'mongodb' with pid 1796
-2024-04-23 01:20:41,088 INFO gave up: postgres entered FATAL state, too many start retries too quickly
-2024-04-23 01:20:41,886 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 01:20:42,889 INFO gave up: mongodb entered FATAL state, too many start retries too quickly
-2024-04-23 01:20:51,411 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
-2024-04-23 01:21:42,948 INFO reaped unknown pid 82
-2024-04-23 02:51:57,563 WARN received SIGTERM indicating exit request
-2024-04-23 02:51:57,567 INFO waiting for stdout, redis, rts, backend, editor to die
-2024-04-23 02:51:58,592 INFO stopped: editor (exit status 2)
-2024-04-23 02:52:00,606 INFO waiting for stdout, redis, rts, backend to die
-2024-04-23 02:52:03,261 INFO reaped unknown pid 1596
-2024-04-23 02:52:03,262 INFO stopped: backend (exit status 143)
-2024-04-23 02:52:03,266 INFO stopped: rts (terminated by SIGTERM)
-2024-04-23 02:52:04,272 INFO waiting for stdout, redis to die
-2024-04-23 02:52:04,336 INFO stopped: redis (exit status 0)
-2024-04-23 02:52:04,338 INFO stopped: stdout (terminated by SIGTERM)
-2024-04-23 02:54:10,464 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
-2024-04-23 02:54:10,464 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
-2024-04-23 02:54:10,464 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
-2024-04-23 02:54:10,464 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
-2024-04-23 02:54:10,464 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
-2024-04-23 02:54:10,465 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
-2024-04-23 02:54:10,465 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
-2024-04-23 02:54:10,469 INFO RPC interface 'supervisor' initialized
-2024-04-23 02:54:10,469 INFO RPC interface 'supervisor' initialized
-2024-04-23 02:54:10,469 CRIT Server 'unix_http_server' running without any HTTP authentication checking
-2024-04-23 02:54:10,469 INFO supervisord started with pid 1
-2024-04-23 02:54:10,615 INFO spawned: 'stdout' with pid 1507
-2024-04-23 02:54:10,616 INFO spawned: 'redis' with pid 1508
-2024-04-23 02:54:10,618 INFO spawned: 'mongodb' with pid 1509
-2024-04-23 02:54:10,619 INFO spawned: 'rts' with pid 1510
-2024-04-23 02:54:10,620 INFO spawned: 'backend' with pid 1511
-2024-04-23 02:54:10,623 INFO spawned: 'editor' with pid 1512
-2024-04-23 02:54:10,626 INFO spawned: 'postgres' with pid 1513
-2024-04-23 02:54:10,635 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 02:54:10,635 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 02:54:10,636 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 02:54:10,889 INFO reaped unknown pid 55
-2024-04-23 02:54:11,690 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2024-04-23 02:54:11,692 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2024-04-23 02:54:11,741 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 02:54:12,117 INFO spawned: 'postgres' with pid 1624
-2024-04-23 02:54:12,446 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 02:54:12,602 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 02:54:13,592 INFO spawned: 'mongodb' with pid 1651
-2024-04-23 02:54:13,622 INFO spawned: 'postgres' with pid 1652
-2024-04-23 02:54:14,147 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 02:54:14,466 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 02:54:16,568 INFO spawned: 'mongodb' with pid 1708
-2024-04-23 02:54:16,572 INFO spawned: 'postgres' with pid 1709
-2024-04-23 02:54:17,922 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2024-04-23 02:54:17,924 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 02:54:17,943 INFO spawned: 'postgres' with pid 1742
-2024-04-23 02:54:18,050 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 02:54:18,612 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 02:54:19,629 INFO spawned: 'postgres' with pid 1775
-2024-04-23 02:54:20,145 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 02:54:21,097 INFO spawned: 'mongodb' with pid 1795
-2024-04-23 02:54:21,937 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 02:54:22,939 INFO gave up: mongodb entered FATAL state, too many start retries too quickly
-2024-04-23 02:54:22,941 INFO spawned: 'postgres' with pid 1830
-2024-04-23 02:54:23,181 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 02:54:26,191 INFO spawned: 'postgres' with pid 1880
-2024-04-23 02:54:26,436 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 02:54:27,286 INFO gave up: postgres entered FATAL state, too many start retries too quickly
-2024-04-23 02:54:31,400 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
-2024-04-23 02:55:25,075 INFO reaped unknown pid 83
-2024-04-23 02:58:07,136 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
-2024-04-23 02:58:07,136 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
-2024-04-23 02:58:07,136 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
-2024-04-23 02:58:07,136 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
-2024-04-23 02:58:07,137 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
-2024-04-23 02:58:07,137 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
-2024-04-23 02:58:07,137 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
-2024-04-23 02:58:07,140 INFO RPC interface 'supervisor' initialized
-2024-04-23 02:58:07,140 INFO RPC interface 'supervisor' initialized
-2024-04-23 02:58:07,141 CRIT Server 'unix_http_server' running without any HTTP authentication checking
-2024-04-23 02:58:07,141 INFO supervisord started with pid 1
-2024-04-23 02:58:07,436 INFO spawned: 'stdout' with pid 1501
-2024-04-23 02:58:07,438 INFO spawned: 'redis' with pid 1502
-2024-04-23 02:58:07,439 INFO spawned: 'mongodb' with pid 1503
-2024-04-23 02:58:07,440 INFO spawned: 'rts' with pid 1504
-2024-04-23 02:58:07,443 INFO spawned: 'backend' with pid 1505
-2024-04-23 02:58:07,445 INFO spawned: 'editor' with pid 1510
-2024-04-23 02:58:07,447 INFO spawned: 'postgres' with pid 1512
-2024-04-23 02:58:07,456 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 02:58:07,456 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 02:58:07,457 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 02:58:07,575 INFO reaped unknown pid 53
-2024-04-23 02:58:07,767 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 02:58:08,338 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 02:58:08,471 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2024-04-23 02:58:08,812 INFO spawned: 'postgres' with pid 1621
-2024-04-23 02:58:09,397 INFO spawned: 'mongodb' with pid 1633
-2024-04-23 02:58:09,823 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2024-04-23 02:58:09,829 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 02:58:09,833 INFO spawned: 'postgres' with pid 1642
-2024-04-23 02:58:10,610 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 02:58:10,701 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 02:58:11,724 INFO spawned: 'postgres' with pid 1673
-2024-04-23 02:58:12,237 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 02:58:13,190 INFO spawned: 'mongodb' with pid 1709
-2024-04-23 02:58:14,125 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 02:58:14,740 INFO spawned: 'postgres' with pid 1739
-2024-04-23 02:58:15,211 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 02:58:17,294 INFO spawned: 'mongodb' with pid 1778
-2024-04-23 02:58:19,206 INFO spawned: 'postgres' with pid 1817
-2024-04-23 02:58:19,207 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 02:58:19,231 INFO gave up: mongodb entered FATAL state, too many start retries too quickly
-2024-04-23 02:58:19,477 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 02:58:20,479 INFO gave up: postgres entered FATAL state, too many start retries too quickly
-2024-04-23 02:58:28,130 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
-2024-04-23 02:58:48,748 WARN received SIGTERM indicating exit request
-2024-04-23 02:58:48,749 INFO waiting for stdout, redis, rts, backend, editor to die
-2024-04-23 02:58:48,812 INFO stopped: editor (exit status 2)
-2024-04-23 02:58:51,889 INFO waiting for stdout, redis, rts, backend to die
-2024-04-23 02:58:53,899 INFO stopped: backend (exit status 143)
-2024-04-23 02:58:53,904 INFO stopped: rts (terminated by SIGTERM)
-2024-04-23 02:58:54,907 INFO waiting for stdout, redis to die
-2024-04-23 02:58:54,918 INFO stopped: redis (exit status 0)
-2024-04-23 02:58:54,920 INFO stopped: stdout (terminated by SIGTERM)
-2024-04-23 02:59:17,661 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
-2024-04-23 02:59:17,662 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
-2024-04-23 02:59:17,662 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
-2024-04-23 02:59:17,662 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
-2024-04-23 02:59:17,662 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
-2024-04-23 02:59:17,663 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
-2024-04-23 02:59:17,663 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
-2024-04-23 02:59:17,667 INFO RPC interface 'supervisor' initialized
-2024-04-23 02:59:17,667 INFO RPC interface 'supervisor' initialized
-2024-04-23 02:59:17,667 CRIT Server 'unix_http_server' running without any HTTP authentication checking
-2024-04-23 02:59:17,667 INFO supervisord started with pid 1
-2024-04-23 02:59:18,022 INFO spawned: 'stdout' with pid 1505
-2024-04-23 02:59:18,024 INFO spawned: 'redis' with pid 1506
-2024-04-23 02:59:18,025 INFO spawned: 'mongodb' with pid 1507
-2024-04-23 02:59:18,027 INFO spawned: 'rts' with pid 1508
-2024-04-23 02:59:18,030 INFO spawned: 'backend' with pid 1512
-2024-04-23 02:59:18,034 INFO spawned: 'editor' with pid 1514
-2024-04-23 02:59:18,040 INFO spawned: 'postgres' with pid 1517
-2024-04-23 02:59:18,052 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 02:59:18,052 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 02:59:18,052 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 02:59:18,262 INFO reaped unknown pid 54
-2024-04-23 02:59:18,539 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 02:59:19,037 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2024-04-23 02:59:19,038 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 02:59:19,672 INFO spawned: 'postgres' with pid 1639
-2024-04-23 02:59:20,375 INFO spawned: 'mongodb' with pid 1647
-2024-04-23 02:59:20,380 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 02:59:22,068 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 02:59:22,440 INFO spawned: 'postgres' with pid 1688
-2024-04-23 02:59:23,073 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 02:59:24,254 INFO spawned: 'mongodb' with pid 1716
-2024-04-23 02:59:25,396 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 02:59:26,199 INFO spawned: 'postgres' with pid 1763
-2024-04-23 02:59:26,579 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 02:59:27,581 INFO gave up: postgres entered FATAL state, too many start retries too quickly
-2024-04-23 02:59:28,484 INFO spawned: 'mongodb' with pid 1791
-2024-04-23 02:59:29,297 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 02:59:30,305 INFO gave up: mongodb entered FATAL state, too many start retries too quickly
-2024-04-23 02:59:38,752 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
-2024-04-23 03:00:23,175 WARN received SIGTERM indicating exit request
-2024-04-23 03:00:23,178 INFO waiting for stdout, redis, rts, backend, editor to die
-2024-04-23 03:00:38,832 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
-2024-04-23 03:00:38,832 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
-2024-04-23 03:00:38,832 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
-2024-04-23 03:00:38,833 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
-2024-04-23 03:00:38,833 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
-2024-04-23 03:00:38,833 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
-2024-04-23 03:00:38,833 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
-2024-04-23 03:00:38,837 INFO RPC interface 'supervisor' initialized
-2024-04-23 03:00:38,837 INFO RPC interface 'supervisor' initialized
-2024-04-23 03:00:38,837 CRIT Server 'unix_http_server' running without any HTTP authentication checking
-2024-04-23 03:00:38,837 INFO supervisord started with pid 1
-2024-04-23 03:00:39,159 INFO spawned: 'stdout' with pid 1502
-2024-04-23 03:00:39,160 INFO spawned: 'redis' with pid 1503
-2024-04-23 03:00:39,161 INFO spawned: 'mongodb' with pid 1504
-2024-04-23 03:00:39,163 INFO spawned: 'rts' with pid 1505
-2024-04-23 03:00:39,165 INFO spawned: 'backend' with pid 1506
-2024-04-23 03:00:39,167 INFO spawned: 'editor' with pid 1510
-2024-04-23 03:00:39,170 INFO spawned: 'postgres' with pid 1513
-2024-04-23 03:00:39,179 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 03:00:39,179 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 03:00:39,180 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 03:00:39,375 INFO reaped unknown pid 55
-2024-04-23 03:00:39,588 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:00:40,043 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 03:00:40,200 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2024-04-23 03:00:41,109 INFO spawned: 'mongodb' with pid 1633
-2024-04-23 03:00:41,112 INFO spawned: 'postgres' with pid 1634
-2024-04-23 03:00:42,200 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2024-04-23 03:00:42,203 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 03:00:42,212 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:00:42,214 INFO spawned: 'postgres' with pid 1657
-2024-04-23 03:00:42,644 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:00:43,733 INFO spawned: 'postgres' with pid 1685
-2024-04-23 03:00:44,305 INFO spawned: 'mongodb' with pid 1690
-2024-04-23 03:00:44,314 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:00:45,353 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 03:00:46,363 INFO spawned: 'postgres' with pid 1736
-2024-04-23 03:00:46,936 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:00:48,606 INFO spawned: 'mongodb' with pid 1767
-2024-04-23 03:00:49,562 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 03:00:49,563 INFO gave up: mongodb entered FATAL state, too many start retries too quickly
-2024-04-23 03:00:50,571 INFO spawned: 'postgres' with pid 1806
-2024-04-23 03:00:50,821 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:00:51,826 INFO gave up: postgres entered FATAL state, too many start retries too quickly
-2024-04-23 03:00:59,898 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
-2024-04-23 03:01:27,789 WARN received SIGTERM indicating exit request
-2024-04-23 03:01:27,790 INFO waiting for stdout, redis, rts, backend, editor to die
-2024-04-23 03:01:28,795 INFO stopped: editor (exit status 2)
-2024-04-23 03:04:25,863 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
-2024-04-23 03:04:25,864 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
-2024-04-23 03:04:25,864 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
-2024-04-23 03:04:25,864 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
-2024-04-23 03:04:25,864 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
-2024-04-23 03:04:25,864 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
-2024-04-23 03:04:25,864 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
-2024-04-23 03:04:25,868 INFO RPC interface 'supervisor' initialized
-2024-04-23 03:04:26,172 INFO RPC interface 'supervisor' initialized
-2024-04-23 03:04:26,173 CRIT Server 'unix_http_server' running without any HTTP authentication checking
-2024-04-23 03:04:26,174 INFO supervisord started with pid 1
-2024-04-23 03:04:27,181 INFO spawned: 'stdout' with pid 1527
-2024-04-23 03:04:27,188 INFO spawned: 'redis' with pid 1528
-2024-04-23 03:04:27,192 INFO spawned: 'mongodb' with pid 1529
-2024-04-23 03:04:27,195 INFO spawned: 'rts' with pid 1530
-2024-04-23 03:04:27,199 INFO spawned: 'backend' with pid 1531
-2024-04-23 03:04:27,203 INFO spawned: 'editor' with pid 1536
-2024-04-23 03:04:27,208 INFO spawned: 'postgres' with pid 1538
-2024-04-23 03:04:27,213 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 03:04:27,214 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 03:04:27,214 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 03:04:27,343 INFO reaped unknown pid 54
-2024-04-23 03:04:27,583 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:04:28,072 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 03:04:28,239 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2024-04-23 03:04:28,810 INFO spawned: 'postgres' with pid 1658
-2024-04-23 03:04:29,444 INFO spawned: 'mongodb' with pid 1672
-2024-04-23 03:04:29,446 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:04:30,646 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 03:04:32,280 INFO spawned: 'postgres' with pid 1726
-2024-04-23 03:04:32,689 INFO spawned: 'mongodb' with pid 1736
-2024-04-23 03:04:32,892 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:04:33,705 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 03:04:36,447 INFO spawned: 'postgres' with pid 1806
-2024-04-23 03:04:36,683 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:04:37,510 INFO spawned: 'mongodb' with pid 1819
-2024-04-23 03:04:37,513 INFO gave up: postgres entered FATAL state, too many start retries too quickly
-2024-04-23 03:04:38,342 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 03:04:39,345 INFO gave up: mongodb entered FATAL state, too many start retries too quickly
-2024-04-23 03:04:47,808 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
-2024-04-23 03:05:37,411 INFO reaped unknown pid 80
-2024-04-23 03:06:35,389 WARN received SIGTERM indicating exit request
-2024-04-23 03:06:35,391 INFO waiting for stdout, redis, rts, backend, editor to die
-2024-04-23 03:06:35,458 INFO stopped: editor (exit status 2)
-2024-04-23 03:06:38,470 INFO waiting for stdout, redis, rts, backend to die
-2024-04-23 03:06:40,564 INFO stopped: backend (exit status 143)
-2024-04-23 03:06:40,576 INFO stopped: rts (terminated by SIGTERM)
-2024-04-23 03:06:40,902 INFO stopped: redis (exit status 0)
-2024-04-23 03:06:40,903 INFO stopped: stdout (terminated by SIGTERM)
-2024-04-23 03:15:57,878 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
-2024-04-23 03:15:57,879 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
-2024-04-23 03:15:57,879 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
-2024-04-23 03:15:57,879 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
-2024-04-23 03:15:57,879 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
-2024-04-23 03:15:57,879 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
-2024-04-23 03:15:57,879 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
-2024-04-23 03:15:57,883 INFO RPC interface 'supervisor' initialized
-2024-04-23 03:15:57,883 INFO RPC interface 'supervisor' initialized
-2024-04-23 03:15:57,883 CRIT Server 'unix_http_server' running without any HTTP authentication checking
-2024-04-23 03:15:57,884 INFO supervisord started with pid 1
-2024-04-23 03:15:58,198 INFO spawned: 'stdout' with pid 1504
-2024-04-23 03:15:58,200 INFO spawned: 'redis' with pid 1505
-2024-04-23 03:15:58,201 INFO spawned: 'mongodb' with pid 1506
-2024-04-23 03:15:58,202 INFO spawned: 'rts' with pid 1507
-2024-04-23 03:15:58,203 INFO spawned: 'backend' with pid 1508
-2024-04-23 03:15:58,206 INFO spawned: 'editor' with pid 1509
-2024-04-23 03:15:58,208 INFO spawned: 'postgres' with pid 1510
-2024-04-23 03:15:58,213 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 03:15:58,213 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 03:15:58,214 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 03:15:58,322 INFO reaped unknown pid 54
-2024-04-23 03:15:58,590 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:15:59,238 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2024-04-23 03:15:59,321 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 03:15:59,755 INFO spawned: 'postgres' with pid 1629
-2024-04-23 03:16:00,299 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:16:01,140 INFO spawned: 'mongodb' with pid 1659
-2024-04-23 03:16:02,398 INFO spawned: 'postgres' with pid 1682
-2024-04-23 03:16:02,400 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 03:16:02,801 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:16:04,473 INFO spawned: 'mongodb' with pid 1718
-2024-04-23 03:16:05,502 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 03:16:06,510 INFO spawned: 'postgres' with pid 1765
-2024-04-23 03:16:06,815 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:16:07,818 INFO gave up: postgres entered FATAL state, too many start retries too quickly
-2024-04-23 03:16:08,604 INFO spawned: 'mongodb' with pid 1792
-2024-04-23 03:16:09,508 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 03:16:10,513 INFO gave up: mongodb entered FATAL state, too many start retries too quickly
-2024-04-23 03:16:18,903 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
-2024-04-23 03:17:04,389 WARN received SIGTERM indicating exit request
-2024-04-23 03:17:04,390 INFO waiting for stdout, redis, rts, backend, editor to die
-2024-04-23 03:17:04,398 INFO stopped: editor (exit status 2)
-2024-04-23 03:17:07,411 INFO waiting for stdout, redis, rts, backend to die
-2024-04-23 03:17:09,518 INFO stopped: backend (exit status 143)
-2024-04-23 03:17:09,522 INFO stopped: rts (terminated by SIGTERM)
-2024-04-23 03:17:10,526 INFO waiting for stdout, redis to die
-2024-04-23 03:17:10,600 INFO stopped: redis (exit status 0)
-2024-04-23 03:17:10,601 INFO stopped: stdout (terminated by SIGTERM)
-2024-04-23 03:25:03,589 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
-2024-04-23 03:25:03,589 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
-2024-04-23 03:25:03,589 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
-2024-04-23 03:25:03,590 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
-2024-04-23 03:25:03,590 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
-2024-04-23 03:25:03,590 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
-2024-04-23 03:25:03,590 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
-2024-04-23 03:25:03,594 INFO RPC interface 'supervisor' initialized
-2024-04-23 03:25:03,594 INFO RPC interface 'supervisor' initialized
-2024-04-23 03:25:03,594 CRIT Server 'unix_http_server' running without any HTTP authentication checking
-2024-04-23 03:25:03,594 INFO supervisord started with pid 1
-2024-04-23 03:25:03,906 INFO spawned: 'stdout' with pid 1501
-2024-04-23 03:25:03,908 INFO spawned: 'redis' with pid 1502
-2024-04-23 03:25:03,909 INFO spawned: 'mongodb' with pid 1503
-2024-04-23 03:25:03,910 INFO spawned: 'rts' with pid 1504
-2024-04-23 03:25:03,913 INFO spawned: 'backend' with pid 1508
-2024-04-23 03:25:03,916 INFO spawned: 'editor' with pid 1510
-2024-04-23 03:25:03,923 INFO spawned: 'postgres' with pid 1519
-2024-04-23 03:25:03,933 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 03:25:03,934 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 03:25:03,934 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 03:25:04,079 INFO reaped unknown pid 53
-2024-04-23 03:25:04,353 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:25:04,789 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 03:25:04,939 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2024-04-23 03:25:05,865 INFO spawned: 'mongodb' with pid 1636
-2024-04-23 03:25:05,868 INFO spawned: 'postgres' with pid 1637
-2024-04-23 03:25:07,036 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2024-04-23 03:25:07,037 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:25:07,042 INFO spawned: 'postgres' with pid 1665
-2024-04-23 03:25:07,220 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 03:25:07,645 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:25:08,784 INFO spawned: 'postgres' with pid 1689
-2024-04-23 03:25:09,449 INFO spawned: 'mongodb' with pid 1700
-2024-04-23 03:25:09,455 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:25:10,453 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 03:25:12,189 INFO spawned: 'postgres' with pid 1756
-2024-04-23 03:25:13,855 INFO spawned: 'mongodb' with pid 1782
-2024-04-23 03:25:13,856 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2024-04-23 03:25:13,858 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:25:13,915 INFO spawned: 'postgres' with pid 1783
-2024-04-23 03:25:14,172 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:25:14,867 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 03:25:15,870 INFO gave up: mongodb entered FATAL state, too many start retries too quickly
-2024-04-23 03:25:15,871 INFO spawned: 'postgres' with pid 1819
-2024-04-23 03:25:16,194 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:25:18,427 INFO spawned: 'postgres' with pid 1869
-2024-04-23 03:25:18,679 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:25:22,465 INFO spawned: 'postgres' with pid 1914
-2024-04-23 03:25:22,711 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:25:23,554 INFO gave up: postgres entered FATAL state, too many start retries too quickly
-2024-04-23 03:25:24,557 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
-2024-04-23 03:26:17,189 INFO reaped unknown pid 80
-2024-04-23 03:30:45,563 WARN received SIGTERM indicating exit request
-2024-04-23 03:30:45,564 INFO waiting for stdout, redis, rts, backend, editor to die
-2024-04-23 03:30:46,571 INFO stopped: editor (exit status 2)
-2024-04-23 03:30:48,583 INFO waiting for stdout, redis, rts, backend to die
-2024-04-23 03:30:51,061 INFO stopped: backend (exit status 143)
-2024-04-23 03:30:51,062 INFO reaped unknown pid 1598
-2024-04-23 03:30:51,065 INFO stopped: rts (terminated by SIGTERM)
-2024-04-23 03:30:52,069 INFO waiting for stdout, redis to die
-2024-04-23 03:30:52,128 INFO stopped: redis (exit status 0)
-2024-04-23 03:30:52,128 INFO stopped: stdout (terminated by SIGTERM)
-2024-04-23 03:32:24,503 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
-2024-04-23 03:32:24,504 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
-2024-04-23 03:32:24,504 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
-2024-04-23 03:32:24,505 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
-2024-04-23 03:32:24,505 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
-2024-04-23 03:32:24,505 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
-2024-04-23 03:32:24,505 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
-2024-04-23 03:32:24,521 INFO RPC interface 'supervisor' initialized
-2024-04-23 03:32:24,522 INFO RPC interface 'supervisor' initialized
-2024-04-23 03:32:24,522 CRIT Server 'unix_http_server' running without any HTTP authentication checking
-2024-04-23 03:32:24,522 INFO supervisord started with pid 1
-2024-04-23 03:32:24,860 INFO spawned: 'stdout' with pid 1505
-2024-04-23 03:32:24,862 INFO spawned: 'redis' with pid 1506
-2024-04-23 03:32:24,865 INFO spawned: 'mongodb' with pid 1507
-2024-04-23 03:32:24,867 INFO spawned: 'rts' with pid 1508
-2024-04-23 03:32:24,870 INFO spawned: 'backend' with pid 1512
-2024-04-23 03:32:24,872 INFO spawned: 'editor' with pid 1513
-2024-04-23 03:32:24,878 INFO spawned: 'postgres' with pid 1514
-2024-04-23 03:32:24,892 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 03:32:24,895 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 03:32:24,896 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 03:32:25,421 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:32:25,799 INFO reaped unknown pid 56
-2024-04-23 03:32:25,937 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2024-04-23 03:32:25,938 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 03:32:26,839 INFO spawned: 'postgres' with pid 1637
-2024-04-23 03:32:27,265 INFO spawned: 'mongodb' with pid 1643
-2024-04-23 03:32:27,665 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:32:28,320 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 03:32:29,961 INFO spawned: 'postgres' with pid 1688
-2024-04-23 03:32:30,849 INFO spawned: 'mongodb' with pid 1705
-2024-04-23 03:32:30,867 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:32:32,004 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 03:32:34,462 INFO spawned: 'postgres' with pid 1766
-2024-04-23 03:32:35,395 INFO spawned: 'mongodb' with pid 1777
-2024-04-23 03:32:35,676 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2024-04-23 03:32:35,693 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:32:35,697 INFO spawned: 'postgres' with pid 1783
-2024-04-23 03:32:36,654 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 03:32:36,659 INFO gave up: mongodb entered FATAL state, too many start retries too quickly
-2024-04-23 03:32:36,659 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:32:38,491 INFO spawned: 'postgres' with pid 1837
-2024-04-23 03:32:38,994 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:32:41,004 INFO spawned: 'postgres' with pid 1871
-2024-04-23 03:32:41,365 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:32:44,593 INFO spawned: 'postgres' with pid 1918
-2024-04-23 03:32:44,866 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:32:45,871 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
-2024-04-23 03:32:45,873 INFO gave up: postgres entered FATAL state, too many start retries too quickly
-2024-04-23 03:33:41,620 INFO reaped unknown pid 83
-2024-04-23 03:41:20,848 WARN received SIGTERM indicating exit request
-2024-04-23 03:41:20,851 INFO waiting for stdout, redis, rts, backend, editor to die
-2024-04-23 03:41:21,883 INFO stopped: editor (exit status 2)
-2024-04-23 03:41:23,900 INFO waiting for stdout, redis, rts, backend to die
-2024-04-23 03:41:26,468 INFO reaped unknown pid 1604
-2024-04-23 03:41:26,470 INFO stopped: backend (exit status 143)
-2024-04-23 03:41:26,475 INFO stopped: rts (terminated by SIGTERM)
-2024-04-23 03:41:27,482 INFO waiting for stdout, redis to die
-2024-04-23 03:41:27,590 INFO stopped: redis (exit status 0)
-2024-04-23 03:41:27,591 INFO stopped: stdout (terminated by SIGTERM)
-2024-04-23 03:43:47,941 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
-2024-04-23 03:43:47,941 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
-2024-04-23 03:43:47,941 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
-2024-04-23 03:43:47,941 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
-2024-04-23 03:43:47,941 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
-2024-04-23 03:43:47,942 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
-2024-04-23 03:43:47,942 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
-2024-04-23 03:43:47,946 INFO RPC interface 'supervisor' initialized
-2024-04-23 03:43:47,946 INFO RPC interface 'supervisor' initialized
-2024-04-23 03:43:47,947 CRIT Server 'unix_http_server' running without any HTTP authentication checking
-2024-04-23 03:43:47,947 INFO supervisord started with pid 1
-2024-04-23 03:43:48,342 INFO spawned: 'stdout' with pid 1506
-2024-04-23 03:43:48,344 INFO spawned: 'redis' with pid 1507
-2024-04-23 03:43:48,346 INFO spawned: 'mongodb' with pid 1508
-2024-04-23 03:43:48,347 INFO spawned: 'rts' with pid 1509
-2024-04-23 03:43:48,349 INFO spawned: 'backend' with pid 1510
-2024-04-23 03:43:48,352 INFO spawned: 'editor' with pid 1512
-2024-04-23 03:43:48,355 INFO spawned: 'postgres' with pid 1517
-2024-04-23 03:43:48,363 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 03:43:48,363 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 03:43:48,363 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 03:43:48,532 INFO reaped unknown pid 54
-2024-04-23 03:43:48,763 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:43:49,385 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2024-04-23 03:43:49,385 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 03:43:49,792 INFO spawned: 'postgres' with pid 1628
-2024-04-23 03:43:50,224 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:43:51,132 INFO spawned: 'mongodb' with pid 1652
-2024-04-23 03:43:52,043 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 03:43:52,366 INFO spawned: 'postgres' with pid 1674
-2024-04-23 03:43:52,927 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:43:54,112 INFO spawned: 'mongodb' with pid 1713
-2024-04-23 03:43:55,202 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 03:43:56,625 INFO spawned: 'postgres' with pid 1758
-2024-04-23 03:43:56,989 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:43:57,994 INFO gave up: postgres entered FATAL state, too many start retries too quickly
-2024-04-23 03:43:58,749 INFO spawned: 'mongodb' with pid 1785
-2024-04-23 03:44:00,633 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 03:44:01,617 INFO gave up: mongodb entered FATAL state, too many start retries too quickly
-2024-04-23 03:44:09,014 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
-2024-04-23 03:45:03,240 INFO reaped unknown pid 82
-2024-04-23 03:49:22,366 WARN received SIGTERM indicating exit request
-2024-04-23 03:49:22,369 INFO waiting for stdout, redis, rts, backend, editor to die
-2024-04-23 03:49:23,391 INFO stopped: editor (exit status 2)
-2024-04-23 03:49:25,409 INFO waiting for stdout, redis, rts, backend to die
-2024-04-23 03:49:28,941 INFO stopped: backend (exit status 143)
-2024-04-23 03:49:28,943 INFO reaped unknown pid 1599
-2024-04-23 03:49:28,945 INFO waiting for stdout, redis, rts to die
-2024-04-23 03:49:28,958 INFO stopped: rts (terminated by SIGTERM)
-2024-04-23 03:49:29,986 INFO stopped: redis (exit status 0)
-2024-04-23 03:49:29,991 INFO stopped: stdout (terminated by SIGTERM)
-2024-04-23 03:49:31,826 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
-2024-04-23 03:49:31,826 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
-2024-04-23 03:49:31,826 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
-2024-04-23 03:49:31,826 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
-2024-04-23 03:49:31,827 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
-2024-04-23 03:49:31,827 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
-2024-04-23 03:49:31,827 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
-2024-04-23 03:49:31,831 INFO RPC interface 'supervisor' initialized
-2024-04-23 03:49:31,831 INFO RPC interface 'supervisor' initialized
-2024-04-23 03:49:31,832 CRIT Server 'unix_http_server' running without any HTTP authentication checking
-2024-04-23 03:49:31,832 INFO supervisord started with pid 1
-2024-04-23 03:49:32,245 INFO spawned: 'stdout' with pid 1509
-2024-04-23 03:49:32,247 INFO spawned: 'redis' with pid 1510
-2024-04-23 03:49:32,249 INFO spawned: 'mongodb' with pid 1511
-2024-04-23 03:49:32,254 INFO spawned: 'rts' with pid 1512
-2024-04-23 03:49:32,261 INFO spawned: 'backend' with pid 1516
-2024-04-23 03:49:32,264 INFO spawned: 'editor' with pid 1518
-2024-04-23 03:49:32,266 INFO spawned: 'postgres' with pid 1520
-2024-04-23 03:49:32,271 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 03:49:32,271 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 03:49:32,272 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
-2024-04-23 03:49:32,393 INFO reaped unknown pid 57
-2024-04-23 03:49:32,661 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:49:33,192 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 03:49:33,300 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2024-04-23 03:49:33,685 INFO spawned: 'postgres' with pid 1635
-2024-04-23 03:49:34,139 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:49:34,655 INFO spawned: 'mongodb' with pid 1653
-2024-04-23 03:49:35,763 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 03:49:36,396 INFO spawned: 'postgres' with pid 1694
-2024-04-23 03:49:36,860 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:49:37,896 INFO spawned: 'mongodb' with pid 1722
-2024-04-23 03:49:39,114 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 03:49:39,912 INFO spawned: 'postgres' with pid 1757
-2024-04-23 03:49:40,113 INFO exited: postgres (exit status 1; not expected)
-2024-04-23 03:49:41,121 INFO gave up: postgres entered FATAL state, too many start retries too quickly
-2024-04-23 03:49:42,140 INFO spawned: 'mongodb' with pid 1789
-2024-04-23 03:49:43,247 INFO exited: mongodb (exit status 14; not expected)
-2024-04-23 03:49:44,250 INFO gave up: mongodb entered FATAL state, too many start retries too quickly
-2024-04-23 03:49:52,814 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
-2024-04-23 03:50:47,209 INFO reaped unknown pid 85
-2024-04-23 22:11:38,515 WARN received SIGTERM indicating exit request
-2024-04-23 22:11:38,520 INFO waiting for stdout, redis, rts, backend, editor to die
-2024-04-23 22:11:39,532 INFO stopped: editor (exit status 2)
-2024-04-23 22:11:41,547 INFO waiting for stdout, redis, rts, backend to die
-2024-04-23 22:11:44,212 INFO reaped unknown pid 1606
-2024-04-23 22:11:44,213 INFO stopped: backend (exit status 143)
-2024-04-23 22:11:44,221 INFO stopped: rts (terminated by SIGTERM)
-2024-04-23 22:11:44,751 INFO waiting for stdout, redis to die
-2024-04-23 22:11:44,786 INFO stopped: redis (exit status 0)
-2024-04-23 22:11:44,787 INFO stopped: stdout (terminated by SIGTERM)
+2024-04-26 02:06:45,266 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-26 02:06:45,266 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
+2024-04-26 02:06:45,266 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
+2024-04-26 02:06:45,267 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
+2024-04-26 02:06:45,267 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
+2024-04-26 02:06:45,267 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
+2024-04-26 02:06:45,267 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
+2024-04-26 02:06:45,270 INFO RPC interface 'supervisor' initialized
+2024-04-26 02:06:45,271 INFO RPC interface 'supervisor' initialized
+2024-04-26 02:06:45,271 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2024-04-26 02:06:45,272 INFO supervisord started with pid 1
+2024-04-26 02:06:45,782 INFO spawned: 'stdout' with pid 1749
+2024-04-26 02:06:45,784 INFO spawned: 'redis' with pid 1750
+2024-04-26 02:06:45,785 INFO spawned: 'mongodb' with pid 1751
+2024-04-26 02:06:45,788 INFO spawned: 'rts' with pid 1752
+2024-04-26 02:06:45,790 INFO spawned: 'backend' with pid 1753
+2024-04-26 02:06:45,795 INFO spawned: 'editor' with pid 1756
+2024-04-26 02:06:45,800 INFO spawned: 'postgres' with pid 1760
+2024-04-26 02:06:45,808 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 02:06:45,808 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 02:06:45,809 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 02:06:46,092 INFO reaped unknown pid 52
+2024-04-26 02:06:46,908 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 02:06:46,910 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 02:06:47,952 INFO reaped unknown pid 94
+2024-04-26 02:06:55,825 INFO success: mongodb entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-04-26 02:07:06,696 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
+2024-04-26 02:35:57,474 WARN received SIGTERM indicating exit request
+2024-04-26 02:35:57,476 INFO waiting for stdout, redis, mongodb, rts, backend, editor, postgres to die
+2024-04-26 02:35:58,510 INFO stopped: postgres (exit status 0)
+2024-04-26 02:35:58,518 INFO stopped: editor (exit status 2)
+2024-04-26 02:36:01,054 INFO waiting for stdout, redis, mongodb, rts, backend to die
+2024-04-26 02:36:04,066 INFO waiting for stdout, redis, mongodb, rts, backend to die
+2024-04-26 02:36:05,812 INFO stopped: backend (exit status 143)
+2024-04-26 02:36:05,814 INFO reaped unknown pid 1845
+2024-04-26 02:36:05,824 INFO stopped: rts (terminated by SIGTERM)
+2024-04-26 02:36:06,623 INFO stopped: mongodb (exit status 0)
+2024-04-26 02:36:06,646 INFO stopped: redis (exit status 0)
+2024-04-26 02:36:06,648 INFO stopped: stdout (terminated by SIGTERM)
+2024-04-26 02:38:00,157 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-26 02:38:00,158 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
+2024-04-26 02:38:00,158 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
+2024-04-26 02:38:00,158 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
+2024-04-26 02:38:00,158 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
+2024-04-26 02:38:00,159 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
+2024-04-26 02:38:00,159 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
+2024-04-26 02:38:00,163 INFO RPC interface 'supervisor' initialized
+2024-04-26 02:38:00,163 INFO RPC interface 'supervisor' initialized
+2024-04-26 02:38:00,163 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2024-04-26 02:38:00,164 INFO supervisord started with pid 1
+2024-04-26 02:38:00,319 INFO spawned: 'stdout' with pid 1503
+2024-04-26 02:38:00,321 INFO spawned: 'redis' with pid 1504
+2024-04-26 02:38:00,322 INFO spawned: 'mongodb' with pid 1505
+2024-04-26 02:38:00,323 INFO spawned: 'rts' with pid 1506
+2024-04-26 02:38:00,325 INFO spawned: 'backend' with pid 1507
+2024-04-26 02:38:00,328 INFO spawned: 'editor' with pid 1508
+2024-04-26 02:38:00,332 INFO spawned: 'postgres' with pid 1511
+2024-04-26 02:38:00,340 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 02:38:00,340 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 02:38:00,341 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 02:38:00,464 INFO reaped unknown pid 56
+2024-04-26 02:38:01,361 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 02:38:01,362 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 02:38:03,876 INFO reaped unknown pid 82
+2024-04-26 02:38:10,750 INFO success: mongodb entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-04-26 02:38:21,092 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
+2024-04-26 02:43:00,501 WARN received SIGTERM indicating exit request
+2024-04-26 02:43:00,517 INFO waiting for stdout, redis, mongodb, rts, backend, editor, postgres to die
+2024-04-26 02:43:00,662 INFO stopped: postgres (exit status 0)
+2024-04-26 02:43:00,699 INFO stopped: editor (exit status 2)
+2024-04-26 02:43:03,632 INFO waiting for stdout, redis, mongodb, rts, backend to die
+2024-04-26 02:43:06,644 INFO reaped unknown pid 1602
+2024-04-26 02:43:06,645 INFO waiting for stdout, redis, mongodb, rts, backend to die
+2024-04-26 02:43:07,750 INFO stopped: backend (exit status 143)
+2024-04-26 02:43:07,785 INFO stopped: rts (terminated by SIGTERM)
+2024-04-26 02:43:08,970 INFO stopped: mongodb (exit status 0)
+2024-04-26 02:43:09,008 INFO stopped: redis (exit status 0)
+2024-04-26 02:43:09,009 INFO stopped: stdout (terminated by SIGTERM)
+2024-04-26 02:43:16,418 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-26 02:43:16,420 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
+2024-04-26 02:43:16,421 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
+2024-04-26 02:43:16,421 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
+2024-04-26 02:43:16,421 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
+2024-04-26 02:43:16,421 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
+2024-04-26 02:43:16,421 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
+2024-04-26 02:43:16,430 INFO RPC interface 'supervisor' initialized
+2024-04-26 02:43:16,433 INFO RPC interface 'supervisor' initialized
+2024-04-26 02:43:16,433 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2024-04-26 02:43:16,433 INFO supervisord started with pid 1
+2024-04-26 02:43:17,363 INFO spawned: 'stdout' with pid 1506
+2024-04-26 02:43:17,367 INFO spawned: 'redis' with pid 1507
+2024-04-26 02:43:17,372 INFO spawned: 'mongodb' with pid 1508
+2024-04-26 02:43:17,377 INFO spawned: 'rts' with pid 1509
+2024-04-26 02:43:17,381 INFO spawned: 'backend' with pid 1514
+2024-04-26 02:43:17,387 INFO spawned: 'editor' with pid 1516
+2024-04-26 02:43:17,391 INFO spawned: 'postgres' with pid 1518
+2024-04-26 02:43:17,398 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 02:43:17,398 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 02:43:17,398 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 02:43:17,566 INFO reaped unknown pid 54
+2024-04-26 02:43:18,463 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 02:43:18,464 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 02:43:21,093 INFO reaped unknown pid 81
+2024-04-26 02:43:27,991 INFO success: mongodb entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-04-26 02:43:37,406 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
+2024-04-26 03:06:07,004 WARN received SIGTERM indicating exit request
+2024-04-26 03:06:07,012 INFO waiting for stdout, redis, mongodb, rts, backend, editor, postgres to die
+2024-04-26 03:06:07,069 INFO stopped: postgres (exit status 0)
+2024-04-26 03:06:07,076 INFO stopped: editor (exit status 2)
+2024-04-26 03:06:10,313 INFO waiting for stdout, redis, mongodb, rts, backend to die
+2024-04-26 03:06:13,077 INFO stopped: backend (exit status 143)
+2024-04-26 03:06:13,079 INFO reaped unknown pid 1602
+2024-04-26 03:06:13,097 INFO stopped: rts (terminated by SIGTERM)
+2024-04-26 03:06:14,056 INFO waiting for stdout, redis, mongodb to die
+2024-04-26 03:06:15,063 INFO stopped: mongodb (exit status 0)
+2024-04-26 03:06:15,148 INFO stopped: redis (exit status 0)
+2024-04-26 03:06:15,150 INFO stopped: stdout (terminated by SIGTERM)
+2024-04-26 03:06:35,167 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-26 03:06:35,168 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
+2024-04-26 03:06:35,168 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
+2024-04-26 03:06:35,168 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
+2024-04-26 03:06:35,169 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
+2024-04-26 03:06:35,169 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
+2024-04-26 03:06:35,169 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
+2024-04-26 03:06:35,177 INFO RPC interface 'supervisor' initialized
+2024-04-26 03:06:35,178 INFO RPC interface 'supervisor' initialized
+2024-04-26 03:06:35,178 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2024-04-26 03:06:35,178 INFO supervisord started with pid 1
+2024-04-26 03:06:36,120 INFO spawned: 'stdout' with pid 1503
+2024-04-26 03:06:36,126 INFO spawned: 'redis' with pid 1504
+2024-04-26 03:06:36,129 INFO spawned: 'mongodb' with pid 1505
+2024-04-26 03:06:36,135 INFO spawned: 'rts' with pid 1506
+2024-04-26 03:06:36,143 INFO spawned: 'backend' with pid 1510
+2024-04-26 03:06:36,157 INFO spawned: 'editor' with pid 1513
+2024-04-26 03:06:36,165 INFO spawned: 'postgres' with pid 1515
+2024-04-26 03:06:36,203 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 03:06:36,203 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 03:06:36,204 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 03:06:36,470 INFO reaped unknown pid 55
+2024-04-26 03:06:37,240 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 03:06:37,241 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 03:06:42,567 INFO reaped unknown pid 81
+2024-04-26 03:06:46,127 INFO success: mongodb entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-04-26 03:06:56,214 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
+2024-04-26 03:10:16,282 WARN received SIGTERM indicating exit request
+2024-04-26 03:10:16,285 INFO waiting for stdout, redis, mongodb, rts, backend, editor, postgres to die
+2024-04-26 03:10:16,324 INFO stopped: postgres (exit status 0)
+2024-04-26 03:10:16,333 INFO stopped: editor (exit status 2)
+2024-04-26 03:10:19,427 INFO waiting for stdout, redis, mongodb, rts, backend to die
+2024-04-26 03:10:21,116 INFO stopped: backend (exit status 143)
+2024-04-26 03:10:21,117 INFO reaped unknown pid 1597
+2024-04-26 03:10:21,122 INFO stopped: rts (terminated by SIGTERM)
+2024-04-26 03:10:22,054 INFO stopped: mongodb (exit status 0)
+2024-04-26 03:10:22,079 INFO stopped: redis (exit status 0)
+2024-04-26 03:10:22,080 INFO stopped: stdout (terminated by SIGTERM)
+2024-04-26 03:15:09,503 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-26 03:15:09,503 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
+2024-04-26 03:15:09,503 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
+2024-04-26 03:15:09,503 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
+2024-04-26 03:15:09,504 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
+2024-04-26 03:15:09,504 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
+2024-04-26 03:15:09,504 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
+2024-04-26 03:15:09,509 INFO RPC interface 'supervisor' initialized
+2024-04-26 03:15:09,509 INFO RPC interface 'supervisor' initialized
+2024-04-26 03:15:09,509 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2024-04-26 03:15:09,509 INFO supervisord started with pid 1
+2024-04-26 03:15:10,388 INFO spawned: 'stdout' with pid 1508
+2024-04-26 03:15:10,389 INFO spawned: 'redis' with pid 1509
+2024-04-26 03:15:10,391 INFO spawned: 'mongodb' with pid 1510
+2024-04-26 03:15:10,393 INFO spawned: 'rts' with pid 1511
+2024-04-26 03:15:10,396 INFO spawned: 'backend' with pid 1512
+2024-04-26 03:15:10,399 INFO spawned: 'editor' with pid 1516
+2024-04-26 03:15:10,401 INFO spawned: 'postgres' with pid 1519
+2024-04-26 03:15:10,411 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 03:15:10,411 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 03:15:10,412 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 03:15:10,540 INFO reaped unknown pid 59
+2024-04-26 03:15:11,437 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 03:15:11,438 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 03:15:12,601 INFO reaped unknown pid 86
+2024-04-26 03:15:20,835 INFO success: mongodb entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-04-26 03:15:30,938 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
+2024-04-26 03:22:11,727 WARN received SIGTERM indicating exit request
+2024-04-26 03:22:11,729 INFO waiting for stdout, redis, mongodb, rts, backend, editor, postgres to die
+2024-04-26 03:22:11,783 INFO stopped: postgres (exit status 0)
+2024-04-26 03:22:11,788 INFO stopped: editor (exit status 2)
+2024-04-26 03:22:14,888 INFO waiting for stdout, redis, mongodb, rts, backend to die
+2024-04-26 03:22:17,535 INFO stopped: backend (exit status 143)
+2024-04-26 03:22:17,536 INFO reaped unknown pid 1610
+2024-04-26 03:22:17,549 INFO stopped: rts (terminated by SIGTERM)
+2024-04-26 03:22:17,812 INFO stopped: mongodb (exit status 0)
+2024-04-26 03:22:17,900 INFO waiting for stdout, redis to die
+2024-04-26 03:22:17,904 INFO stopped: redis (exit status 0)
+2024-04-26 03:22:17,905 INFO stopped: stdout (terminated by SIGTERM)
+2024-04-26 03:22:19,370 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-26 03:22:19,370 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
+2024-04-26 03:22:19,370 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
+2024-04-26 03:22:19,370 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
+2024-04-26 03:22:19,370 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
+2024-04-26 03:22:19,370 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
+2024-04-26 03:22:19,371 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
+2024-04-26 03:22:19,373 INFO RPC interface 'supervisor' initialized
+2024-04-26 03:22:19,374 INFO RPC interface 'supervisor' initialized
+2024-04-26 03:22:19,374 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2024-04-26 03:22:19,374 INFO supervisord started with pid 1
+2024-04-26 03:22:19,806 INFO spawned: 'stdout' with pid 1508
+2024-04-26 03:22:19,807 INFO spawned: 'redis' with pid 1509
+2024-04-26 03:22:19,809 INFO spawned: 'mongodb' with pid 1510
+2024-04-26 03:22:19,810 INFO spawned: 'rts' with pid 1511
+2024-04-26 03:22:19,813 INFO spawned: 'backend' with pid 1512
+2024-04-26 03:22:19,816 INFO spawned: 'editor' with pid 1518
+2024-04-26 03:22:19,819 INFO spawned: 'postgres' with pid 1523
+2024-04-26 03:22:19,824 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 03:22:19,825 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 03:22:19,825 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 03:22:19,923 INFO reaped unknown pid 58
+2024-04-26 03:22:20,840 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 03:22:20,841 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 03:22:21,623 INFO reaped unknown pid 84
+2024-04-26 03:22:30,200 INFO success: mongodb entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-04-26 03:22:40,595 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
+2024-04-26 03:22:43,611 WARN received SIGTERM indicating exit request
+2024-04-26 03:22:43,613 INFO waiting for stdout, redis, mongodb, rts, backend, editor, postgres to die
+2024-04-26 03:22:44,651 INFO stopped: postgres (exit status 0)
+2024-04-26 03:22:44,675 INFO stopped: editor (exit status 2)
+2024-04-26 03:22:46,759 INFO waiting for stdout, redis, mongodb, rts, backend to die
+2024-04-26 03:22:49,473 INFO reaped unknown pid 1608
+2024-04-26 03:22:50,490 INFO stopped: backend (exit status 143)
+2024-04-26 03:22:50,492 INFO waiting for stdout, redis, mongodb, rts to die
+2024-04-26 03:22:50,507 INFO stopped: rts (terminated by SIGTERM)
+2024-04-26 03:22:51,407 INFO stopped: mongodb (exit status 0)
+2024-04-26 03:22:51,459 INFO stopped: redis (exit status 0)
+2024-04-26 03:22:51,460 INFO stopped: stdout (terminated by SIGTERM)
+2024-04-26 03:22:52,870 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-26 03:22:52,870 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
+2024-04-26 03:22:52,870 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
+2024-04-26 03:22:52,870 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
+2024-04-26 03:22:52,870 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
+2024-04-26 03:22:52,870 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
+2024-04-26 03:22:52,870 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
+2024-04-26 03:22:52,875 INFO RPC interface 'supervisor' initialized
+2024-04-26 03:22:52,875 INFO RPC interface 'supervisor' initialized
+2024-04-26 03:22:52,876 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2024-04-26 03:22:52,876 INFO supervisord started with pid 1
+2024-04-26 03:22:53,291 INFO spawned: 'stdout' with pid 1511
+2024-04-26 03:22:53,293 INFO spawned: 'redis' with pid 1512
+2024-04-26 03:22:53,294 INFO spawned: 'mongodb' with pid 1513
+2024-04-26 03:22:53,295 INFO spawned: 'rts' with pid 1514
+2024-04-26 03:22:53,297 INFO spawned: 'backend' with pid 1518
+2024-04-26 03:22:53,300 INFO spawned: 'editor' with pid 1520
+2024-04-26 03:22:53,303 INFO spawned: 'postgres' with pid 1522
+2024-04-26 03:22:53,309 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 03:22:53,310 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 03:22:53,310 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 03:22:53,413 INFO reaped unknown pid 58
+2024-04-26 03:22:54,373 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 03:22:54,374 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 03:22:55,235 INFO reaped unknown pid 87
+2024-04-26 03:23:03,487 INFO success: mongodb entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-04-26 03:23:13,357 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
+2024-04-26 03:23:18,375 WARN received SIGTERM indicating exit request
+2024-04-26 03:23:18,377 INFO waiting for stdout, redis, mongodb, rts, backend, editor, postgres to die
+2024-04-26 03:23:18,405 INFO stopped: postgres (exit status 0)
+2024-04-26 03:23:18,409 INFO stopped: editor (exit status 2)
+2024-04-26 03:23:21,463 INFO waiting for stdout, redis, mongodb, rts, backend to die
+2024-04-26 03:23:23,118 INFO stopped: backend (exit status 143)
+2024-04-26 03:23:23,118 INFO reaped unknown pid 1613
+2024-04-26 03:23:23,121 INFO stopped: rts (terminated by SIGTERM)
+2024-04-26 03:23:23,773 INFO stopped: mongodb (exit status 0)
+2024-04-26 03:23:23,780 INFO stopped: redis (exit status 0)
+2024-04-26 03:23:23,781 INFO stopped: stdout (terminated by SIGTERM)
+2024-04-26 03:26:08,055 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-26 03:26:08,055 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
+2024-04-26 03:26:08,056 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
+2024-04-26 03:26:08,056 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
+2024-04-26 03:26:08,056 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
+2024-04-26 03:26:08,056 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
+2024-04-26 03:26:08,056 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
+2024-04-26 03:26:08,060 INFO RPC interface 'supervisor' initialized
+2024-04-26 03:26:08,060 INFO RPC interface 'supervisor' initialized
+2024-04-26 03:26:08,061 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2024-04-26 03:26:08,061 INFO supervisord started with pid 1
+2024-04-26 03:26:08,245 INFO spawned: 'stdout' with pid 1503
+2024-04-26 03:26:08,246 INFO spawned: 'redis' with pid 1504
+2024-04-26 03:26:08,248 INFO spawned: 'mongodb' with pid 1505
+2024-04-26 03:26:08,251 INFO spawned: 'rts' with pid 1506
+2024-04-26 03:26:08,254 INFO spawned: 'backend' with pid 1510
+2024-04-26 03:26:08,261 INFO spawned: 'editor' with pid 1512
+2024-04-26 03:26:08,264 INFO spawned: 'postgres' with pid 1516
+2024-04-26 03:26:08,275 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 03:26:08,276 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 03:26:08,276 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 03:26:08,398 INFO reaped unknown pid 55
+2024-04-26 03:26:09,284 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 03:26:09,288 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 03:26:11,822 INFO reaped unknown pid 82
+2024-04-26 03:26:18,464 INFO success: mongodb entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-04-26 03:26:28,326 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
+2024-04-26 03:27:04,177 WARN received SIGTERM indicating exit request
+2024-04-26 03:27:04,178 INFO waiting for stdout, redis, mongodb, rts, backend, editor, postgres to die
+2024-04-26 03:27:04,194 INFO stopped: postgres (exit status 0)
+2024-04-26 03:27:04,196 INFO stopped: editor (exit status 2)
+2024-04-26 03:27:07,237 INFO waiting for stdout, redis, mongodb, rts, backend to die
+2024-04-26 03:27:09,941 INFO stopped: backend (exit status 143)
+2024-04-26 03:27:09,942 INFO reaped unknown pid 1602
+2024-04-26 03:27:09,952 INFO stopped: rts (terminated by SIGTERM)
+2024-04-26 03:27:10,053 INFO stopped: mongodb (exit status 0)
+2024-04-26 03:27:10,150 INFO stopped: redis (exit status 0)
+2024-04-26 03:27:10,154 INFO stopped: stdout (terminated by SIGTERM)
+2024-04-26 03:27:16,155 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-26 03:27:16,155 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
+2024-04-26 03:27:16,155 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
+2024-04-26 03:27:16,155 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
+2024-04-26 03:27:16,155 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
+2024-04-26 03:27:16,155 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
+2024-04-26 03:27:16,156 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
+2024-04-26 03:27:16,160 INFO RPC interface 'supervisor' initialized
+2024-04-26 03:27:16,160 INFO RPC interface 'supervisor' initialized
+2024-04-26 03:27:16,160 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2024-04-26 03:27:16,161 INFO supervisord started with pid 1
+2024-04-26 03:27:16,517 INFO spawned: 'stdout' with pid 1508
+2024-04-26 03:27:16,518 INFO spawned: 'redis' with pid 1509
+2024-04-26 03:27:16,520 INFO spawned: 'mongodb' with pid 1510
+2024-04-26 03:27:16,522 INFO spawned: 'rts' with pid 1511
+2024-04-26 03:27:16,524 INFO spawned: 'backend' with pid 1515
+2024-04-26 03:27:16,527 INFO spawned: 'editor' with pid 1517
+2024-04-26 03:27:16,531 INFO spawned: 'postgres' with pid 1522
+2024-04-26 03:27:16,539 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 03:27:16,539 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 03:27:16,539 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 03:27:16,657 INFO reaped unknown pid 58
+2024-04-26 03:27:17,551 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 03:27:17,551 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 03:27:18,449 INFO reaped unknown pid 84
+2024-04-26 03:27:26,847 INFO success: mongodb entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-04-26 03:27:37,294 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
+2024-04-26 03:28:32,644 WARN received SIGTERM indicating exit request
+2024-04-26 03:28:32,648 INFO waiting for stdout, redis, mongodb, rts, backend, editor, postgres to die
+2024-04-26 03:28:32,692 INFO stopped: postgres (exit status 0)
+2024-04-26 03:28:32,699 INFO stopped: editor (exit status 2)
+2024-04-26 03:28:35,804 INFO waiting for stdout, redis, mongodb, rts, backend to die
+2024-04-26 03:28:37,459 INFO stopped: backend (exit status 143)
+2024-04-26 03:28:37,460 INFO reaped unknown pid 1614
+2024-04-26 03:28:37,466 INFO stopped: rts (terminated by SIGTERM)
+2024-04-26 03:28:39,045 INFO stopped: mongodb (exit status 0)
+2024-04-26 03:28:39,047 INFO waiting for stdout, redis to die
+2024-04-26 03:28:39,138 INFO stopped: redis (exit status 0)
+2024-04-26 03:28:39,141 INFO stopped: stdout (terminated by SIGTERM)
+2024-04-26 03:28:40,479 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-26 03:28:40,480 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
+2024-04-26 03:28:40,480 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
+2024-04-26 03:28:40,480 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
+2024-04-26 03:28:40,480 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
+2024-04-26 03:28:40,480 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
+2024-04-26 03:28:40,480 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
+2024-04-26 03:28:40,483 INFO RPC interface 'supervisor' initialized
+2024-04-26 03:28:40,484 INFO RPC interface 'supervisor' initialized
+2024-04-26 03:28:40,484 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2024-04-26 03:28:40,484 INFO supervisord started with pid 1
+2024-04-26 03:28:40,887 INFO spawned: 'stdout' with pid 1509
+2024-04-26 03:28:40,888 INFO spawned: 'redis' with pid 1510
+2024-04-26 03:28:40,889 INFO spawned: 'mongodb' with pid 1511
+2024-04-26 03:28:40,890 INFO spawned: 'rts' with pid 1512
+2024-04-26 03:28:40,892 INFO spawned: 'backend' with pid 1516
+2024-04-26 03:28:40,895 INFO spawned: 'editor' with pid 1518
+2024-04-26 03:28:40,898 INFO spawned: 'postgres' with pid 1521
+2024-04-26 03:28:40,905 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 03:28:40,905 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 03:28:40,905 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 03:28:41,046 INFO reaped unknown pid 58
+2024-04-26 03:28:41,918 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 03:28:41,919 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 03:28:42,574 INFO reaped unknown pid 85
+2024-04-26 03:28:51,323 INFO success: mongodb entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-04-26 03:29:01,669 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
+2024-04-26 03:53:38,886 WARN received SIGTERM indicating exit request
+2024-04-26 03:53:38,889 INFO waiting for stdout, redis, mongodb, rts, backend, editor, postgres to die
+2024-04-26 03:53:39,916 INFO stopped: postgres (exit status 0)
+2024-04-26 03:53:39,919 INFO stopped: editor (exit status 2)
+2024-04-26 03:53:41,999 INFO waiting for stdout, redis, mongodb, rts, backend to die
+2024-04-26 03:53:45,693 INFO stopped: backend (exit status 143)
+2024-04-26 03:53:45,694 INFO reaped unknown pid 1608
+2024-04-26 03:53:45,696 INFO waiting for stdout, redis, mongodb, rts to die
+2024-04-26 03:53:45,708 INFO stopped: rts (terminated by SIGTERM)
+2024-04-26 03:53:46,078 INFO stopped: mongodb (exit status 0)
+2024-04-26 03:53:46,120 INFO stopped: redis (exit status 0)
+2024-04-26 03:53:46,120 INFO stopped: stdout (terminated by SIGTERM)
+2024-04-26 03:53:52,260 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-26 03:53:52,262 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
+2024-04-26 03:53:52,262 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
+2024-04-26 03:53:52,262 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
+2024-04-26 03:53:52,262 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
+2024-04-26 03:53:52,262 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
+2024-04-26 03:53:52,262 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
+2024-04-26 03:53:52,266 INFO RPC interface 'supervisor' initialized
+2024-04-26 03:53:52,267 INFO RPC interface 'supervisor' initialized
+2024-04-26 03:53:52,267 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2024-04-26 03:53:52,267 INFO supervisord started with pid 1
+2024-04-26 03:53:52,535 INFO spawned: 'stdout' with pid 1506
+2024-04-26 03:53:52,536 INFO spawned: 'redis' with pid 1507
+2024-04-26 03:53:52,537 INFO spawned: 'mongodb' with pid 1508
+2024-04-26 03:53:52,538 INFO spawned: 'rts' with pid 1509
+2024-04-26 03:53:52,540 INFO spawned: 'backend' with pid 1510
+2024-04-26 03:53:52,542 INFO spawned: 'editor' with pid 1512
+2024-04-26 03:53:52,546 INFO spawned: 'postgres' with pid 1515
+2024-04-26 03:53:52,551 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 03:53:52,551 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 03:53:52,551 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 03:53:52,667 INFO reaped unknown pid 55
+2024-04-26 03:53:53,612 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 03:53:53,613 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 03:53:56,142 INFO reaped unknown pid 82
+2024-04-26 03:54:02,918 INFO success: mongodb entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-04-26 03:54:13,039 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
+2024-04-26 04:01:39,874 WARN received SIGTERM indicating exit request
+2024-04-26 04:01:39,875 INFO waiting for stdout, redis, mongodb, rts, backend, editor, postgres to die
+2024-04-26 04:01:39,897 INFO stopped: postgres (exit status 0)
+2024-04-26 04:01:39,903 INFO stopped: editor (exit status 2)
+2024-04-26 04:01:42,987 INFO waiting for stdout, redis, mongodb, rts, backend to die
+2024-04-26 04:01:44,613 INFO stopped: backend (exit status 143)
+2024-04-26 04:01:44,613 INFO reaped unknown pid 1604
+2024-04-26 04:01:44,617 INFO stopped: rts (terminated by SIGTERM)
+2024-04-26 04:01:45,064 INFO stopped: mongodb (exit status 0)
+2024-04-26 04:01:45,167 INFO stopped: redis (exit status 0)
+2024-04-26 04:01:45,168 INFO stopped: stdout (terminated by SIGTERM)
+2024-04-26 04:01:53,033 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-26 04:01:53,033 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
+2024-04-26 04:01:53,033 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
+2024-04-26 04:01:53,033 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
+2024-04-26 04:01:53,034 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
+2024-04-26 04:01:53,034 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
+2024-04-26 04:01:53,034 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
+2024-04-26 04:01:53,038 INFO RPC interface 'supervisor' initialized
+2024-04-26 04:01:53,038 INFO RPC interface 'supervisor' initialized
+2024-04-26 04:01:53,038 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2024-04-26 04:01:53,038 INFO supervisord started with pid 1
+2024-04-26 04:01:53,420 INFO spawned: 'stdout' with pid 1506
+2024-04-26 04:01:53,421 INFO spawned: 'redis' with pid 1507
+2024-04-26 04:01:53,422 INFO spawned: 'mongodb' with pid 1508
+2024-04-26 04:01:53,423 INFO spawned: 'rts' with pid 1509
+2024-04-26 04:01:53,424 INFO spawned: 'backend' with pid 1510
+2024-04-26 04:01:53,425 INFO spawned: 'editor' with pid 1511
+2024-04-26 04:01:53,427 INFO spawned: 'postgres' with pid 1514
+2024-04-26 04:01:53,433 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 04:01:53,433 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 04:01:53,433 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 04:01:53,534 INFO reaped unknown pid 56
+2024-04-26 04:01:54,457 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 04:01:54,458 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 04:01:55,423 INFO reaped unknown pid 82
+2024-04-26 04:02:03,759 INFO success: mongodb entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-04-26 04:02:14,261 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)
+2024-04-26 04:04:25,959 WARN received SIGTERM indicating exit request
+2024-04-26 04:04:25,961 INFO waiting for stdout, redis, mongodb, rts, backend, editor, postgres to die
+2024-04-26 04:04:25,990 INFO stopped: postgres (exit status 0)
+2024-04-26 04:04:25,993 INFO stopped: editor (exit status 2)
+2024-04-26 04:04:29,027 INFO waiting for stdout, redis, mongodb, rts, backend to die
+2024-04-26 04:04:30,671 INFO stopped: backend (exit status 143)
+2024-04-26 04:04:30,672 INFO reaped unknown pid 1609
+2024-04-26 04:04:30,677 INFO stopped: rts (terminated by SIGTERM)
+2024-04-26 04:04:31,144 INFO stopped: mongodb (exit status 0)
+2024-04-26 04:04:31,239 INFO stopped: redis (exit status 0)
+2024-04-26 04:04:31,240 INFO stopped: stdout (terminated by SIGTERM)
+2024-04-26 04:04:32,409 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-04-26 04:04:32,409 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
+2024-04-26 04:04:32,410 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
+2024-04-26 04:04:32,410 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
+2024-04-26 04:04:32,410 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
+2024-04-26 04:04:32,410 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
+2024-04-26 04:04:32,410 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
+2024-04-26 04:04:32,413 INFO RPC interface 'supervisor' initialized
+2024-04-26 04:04:32,413 INFO RPC interface 'supervisor' initialized
+2024-04-26 04:04:32,413 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2024-04-26 04:04:32,414 INFO supervisord started with pid 1
+2024-04-26 04:04:32,873 INFO spawned: 'stdout' with pid 1508
+2024-04-26 04:04:32,874 INFO spawned: 'redis' with pid 1509
+2024-04-26 04:04:32,875 INFO spawned: 'mongodb' with pid 1510
+2024-04-26 04:04:32,876 INFO spawned: 'rts' with pid 1511
+2024-04-26 04:04:32,878 INFO spawned: 'backend' with pid 1515
+2024-04-26 04:04:32,880 INFO spawned: 'editor' with pid 1516
+2024-04-26 04:04:32,883 INFO spawned: 'postgres' with pid 1519
+2024-04-26 04:04:32,887 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 04:04:32,888 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 04:04:32,888 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-04-26 04:04:32,983 INFO reaped unknown pid 57
+2024-04-26 04:04:33,900 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 04:04:33,900 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-04-26 04:04:34,635 INFO reaped unknown pid 84
+2024-04-26 04:04:43,193 INFO success: mongodb entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-04-26 04:04:53,452 INFO success: backend entered RUNNING state, process has stayed up for > than 20 seconds (startsecs)

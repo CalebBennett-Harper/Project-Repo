@@ -6,6 +6,7 @@ user_stories_bp = Blueprint('user_stories', __name__, url_prefix='/user_stories'
 
 @user_stories_bp.route('/', methods=['GET'])
 def get_all_posts():
+    print("u / accessed")
     cursor = db.get_db().cursor()
     cursor.execute("SELECT Post_ID, Support_ID, User_ID, Content, Date FROM Posts")
     posts = cursor.fetchall()

@@ -8,7 +8,7 @@ FROM python:3.9-alpine
 # setting the working directory inside the container to /code
 WORKDIR /code
 
-# COPY . /code
+COPY . /code
 
 RUN apk add gcc musl-dev python3-dev libffi-dev openssl-dev
 
@@ -23,6 +23,6 @@ RUN pip install -r requirements.txt
 EXPOSE 4000
 
 # tell the container to run the flask application
-CMD ["python", "src/app.py"]
-# CMD python ./app.py
-
+# CMD ["python", "src/app.py"]
+CMD python app.py
+# CMD ["python", "app.py"]
