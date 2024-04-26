@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Your Flask App</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to Your Flask App</h1>
-        <p>This is a sample template for your Flask application. Feel free to customize it!</p>
-        <p>Explore different sections of your app:</p>
-        <ul>
-            <li><a href="{{ url_for('savings_bp.index') }}">Savings</a></li>
-            <li><a href="{{ url_for('education_bp.index') }}">Education</a></li>
-            <li><a href="{{ url_for('challenges_bp.index') }}">Challenges and Badges</a></li>
-            <li><a href="{{ url_for('user_stories_bp.index') }}">User Stories</a></li>
-        </ul>
-    </div>
+<div class="container">
+    <h1>Welcome to Your Flask App</h1>
+    <p>This is a sample template for your Flask application. Feel free to customize it!</p>
+    <p>Explore different sections of your app:</p>
+    <ul>
+        <li><a href="/savings">Savings</a></li>
+        <li><a href="/education">Education</a></li>
+        <li><a href="/challenges">Challenges and Badges</a></li>
+        <li><a href="/user-stories">User Stories</a></li>
+    </ul>
+</div>
 </body>
 </html>

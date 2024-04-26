@@ -1,6 +1,6 @@
 # Some set up for the application 
 
-from flask import Flask
+from flask import Flask, render_template
 from flaskext.mysql import MySQL
 
 # create a MySQL object that we will use in other parts of the API
@@ -16,7 +16,8 @@ def create_app():
 
     # these are for the DB object to be able to connect to MySQL. 
     app.config['MYSQL_DATABASE_USER'] = 'root'
-    app.config['MYSQL_DATABASE_PASSWORD'] = open('/secrets/db_root_password.txt').readline().strip()
+    app.config['MYSQL_DATABASE_PASSWORD'] = 456
+    # open('/secrets/db_root_password.txt').readline().strip()
     app.config['MYSQL_DATABASE_HOST'] = 'db'
     app.config['MYSQL_DATABASE_PORT'] = 3306
     app.config['MYSQL_DATABASE_DB'] = 'nosmoke'  # Change this to your DB name
@@ -30,9 +31,31 @@ def create_app():
     # Example: localhost:8001
     @app.route("/")
     def welcome():
-        return "<h1>Welcome to the 3200 boilerplate app</h1>"
+          with open('templates/index.html', 'r') as file:
+                html_content = file.read()
+          return html_content
 
-    # Import the various Beluprint Objects
+    @app.route('/savings')
+    def savings():
+        with open('templates/savings/savings.html', 'r') as file:
+            return file.read()
+
+    @app.route('/education')
+    def education():
+        with open('templates/education/education.html', 'r') as file:
+            return file.read()
+
+    @app.route('/challenges')
+    def challenges():
+        with open('templates/challenges_badges/challenges_badges.html', 'r') as file:
+            return file.read()
+
+    @app.route('/user-stories')
+    def user_stories():
+        with open('templates/user_stories/user_stories.html', 'r') as file:
+            return file.read()
+
+    # Import the various Blueprint Objects
     from src.savings.savings  import savings_bp
     from src.education.education  import education_bp
     from src.challenges_and_badges.challenges_and_badges  import challenges_bp
@@ -40,10 +63,11 @@ def create_app():
 
     # Register the routes from each Blueprint with the app object
     # and give a url prefix to each
-    app.register_blueprint(savings_bp,   url_prefix='/s')
-    app.register_blueprint(education_bp,   url_prefix='/e')
-    app.register_blueprint(challenges_bp,   url_prefix='/c')
-    app.register_blueprint(user_stories_bp,   url_prefix='/u')
+    app.register_blueprint(savings_bp)
+    app.register_blueprint(education_bp)
+    app.register_blueprint(challenges_bp)
+    app.register_blueprint(user_stories_bp)
 
     # Don't forget to return the app object
     return app
+
