@@ -1,0 +1,78 @@
+<!-- savings.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings Management</title>
+</head>
+<body>
+    <h1>Savings Management</h1>
+    
+    <!-- Content area where dynamic content will be loaded -->
+    <div id="content">
+        <!-- Content will be dynamically loaded here -->
+    </div>
+
+    <!-- JavaScript code to handle dynamic content loading -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Function to load total savings for a user
+        function loadTotalSavings(userId) {
+            $.get(`/savings/total/${userId}`, function(data) {
+                $('#content').html(data);
+            });
+        }
+
+        // Function to load a specific savings transaction
+        function loadSavingsTransaction(savingsId) {
+            $.get(`/savings/transaction/${savingsId}`, function(data) {
+                $('#content').html(data);
+            });
+        }
+
+        // Function to load the create savings transaction form
+        function loadCreateForm() {
+            $.get('/savings/create', function(data) {
+                $('#content').html(data);
+            });
+        }
+
+        // Function to load the update savings transaction form
+        function loadUpdateForm(savingsId) {
+            $.get(`/savings/${savingsId}/update`, function(data) {
+                $('#content').html(data);
+            });
+        }
+
+        // Function to load the delete confirmation for a savings transaction
+        function loadDeleteConfirmation(savingsId) {
+            $.get(`/savings/${savingsId}/delete`, function(data) {
+                $('#content').html(data);
+            });
+        }
+    </script>
+</body>
+</html>
+
+<!-- OR 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings</title>
+    //Include any necessary CSS 
+</head>
+<body>
+    <div id="totalSavings"></div>
+    <div id="transactionDetails"></div>
+    <div id="createTransactionForm"></div>
+    <div id="updateTransactionForm"></div>
+    <div id="deleteConfirmation"></div>
+
+    //Include any necessary JavaScript libraries
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='savings.js') }}"></script>
+</body>
+</html> -->

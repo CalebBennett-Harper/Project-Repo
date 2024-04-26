@@ -1,0 +1,62 @@
+<!-- education.html (inside templates/education directory) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Materials</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Educational Materials</h1>
+        <!-- Add your HTML content here -->
+    </div>
+    <script>
+        // Function to display success message in pop-up window
+        function displaySuccessMessage(message) {
+            alert(message); // Display the message in a pop-up window
+        }
+
+        // JavaScript functionality for the education page
+        function updateMaterial(resourceId, data) {
+            fetch(`/education/${resourceId}/update`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    displaySuccessMessage(data.message); // Display success message
+                } else {
+                    console.error('Error updating material:', data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error updating material:', error);
+            });
+        }
+
+        function deleteMaterial(resourceId) {
+            fetch(`/education/${resourceId}/delete`, {
+                method: 'POST'
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    displaySuccessMessage(data.message); // Display success message
+                } else {
+                    console.error('Error deleting material:', data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error deleting material:', error);
+            });
+        }
+    </script>
+</body>
+</html>
