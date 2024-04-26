@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Stories Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>User Stories Dashboard</h1>
+        </header>
+        <section id="postSection">
+            <button onclick="fetchPosts()">Load Stories</button>
+            <div id="postsContainer"></div>
+        </section>
+        <section id="addPostSection">
+            <h2>Add New Story</h2>
+            <form id="addPostForm">
+                <input type="text" id="supportId" placeholder="Support ID" required>
+                <input type="text" id="userId" placeholder="User ID" required>
+                <textarea id="content" placeholder="Content" required></textarea>
+                <button type="submit">Add Story</button>
+            </form>
+        </section>
+        <section id="addCommentSection" style="display:none;">
+            <h2>Add Comment</h2>
+            <form id="addCommentForm">
+                <input type="hidden" id="postIdForComment">
+                <textarea id="commentContent" placeholder="Comment" required></textarea>
+                <button type="submit">Add Comment</button>
+            </form>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
