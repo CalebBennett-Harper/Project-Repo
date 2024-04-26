@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges & Badges Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Challenges & Badges Management</h1>
+        </header>
+        <section id="challengesSection">
+            <h2>Challenges</h2>
+            <button onclick="fetchChallenges()">Load Challenges</button>
+            <div id="challengesContainer"></div>
+        </section>
+        <section id="addChallengeSection">
+            <h2>Add New Challenge</h2>
+            <form id="addChallengeForm">
+                <input type="text" id="challengeTitle" placeholder="Title" required>
+                <textarea id="challengeDescription" placeholder="Description" required></textarea>
+                <button type="submit">Add Challenge</button>
+            </form>
+        </section>
+        <section id="badgesSection">
+            <h2>Badges</h2>
+            <button onclick="fetchBadges()">Load Badges</button>
+            <div id="badgesContainer"></div>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+CSS (styles.css)
+css
+Copy code
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+header {
+    background-color: #ee82ee;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+section {
+    background-color: #f0f0f0;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+button {
+    background-color: #ee82ee;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+button:hover {
+    background-color: #dd76dd;
+}
