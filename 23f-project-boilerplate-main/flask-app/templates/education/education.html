@@ -6,57 +6,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educational Materials</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="../../static/css/style.css">
+
+    <!-- JavaScript code to handle dynamic content loading -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Include your custom JavaScript file -->
+    <script src="../../static/js/education.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>Educational Materials</h1>
         <!-- Add your HTML content here -->
+
+        <div id="getAllMaterials">
+            <ul>
+                {% for material in materials %}
+                    <li>Resource ID: {{ material[0] }}</li>
+                    <li>Articles: {{ material[1] }}</li>
+                    <li>Videos: {{ material[2] }}</li>
+                    <li>User ID: {{ material[3] }}</li>
+                    <li>Statistics: {{ material[4] }}</li>
+                    <br>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div id="getAMaterial">
+            <ul>
+                <li>Articles: {{ material[0] }}</li>
+                <li>Videos: {{ material[1] }}</li>
+                <li>Statistics: {{ material[2] }}</li>
+            </ul>
+        </div>
+
+        <div id="addMaterial">
+            <form method="POST">
+                <label for="articles">Articles:</label><br>
+                <input type="text" id="articles" name="articles"><br>
+                <label for="videos">Videos:</label><br>
+                <input type="text" id="videos" name="videos"><br>
+                <label for="user_id">User ID:</label><br>
+                <input type="text" id="user_id" name="user_id"><br>
+                <label for="statistics">Statistics:</label><br>
+                <input type="text" id="statistics" name="statistics"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div id="updateMaterial">
+            <form action="/education/{{ material.resource_id }}" method="POST">
+                <label for="articles">Articles:</label>
+                <input type="text" id="articles" name="articles" value="{{ material.articles }}"><br><br>
+                
+                <label for="videos">Videos:</label>
+                <input type="text" id="videos" name="videos" value="{{ material.videos }}"><br><br>
+                
+                <label for="statistics">Statistics:</label>
+                <input type="text" id="statistics" name="statistics" value="{{ material.statistics }}"><br><br>
+                
+                <input type="submit" value="Update">
+            </form>
+        </div>
     </div>
-    <script>
-        // Function to display success message in pop-up window
-        function displaySuccessMessage(message) {
-            alert(message); // Display the message in a pop-up window
-        }
-
-        // JavaScript functionality for the education page
-        function updateMaterial(resourceId, data) {
-            fetch(`/education/${resourceId}/update`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(data)
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    displaySuccessMessage(data.message); // Display success message
-                } else {
-                    console.error('Error updating material:', data.message);
-                }
-            })
-            .catch(error => {
-                console.error('Error updating material:', error);
-            });
-        }
-
-        function deleteMaterial(resourceId) {
-            fetch(`/education/${resourceId}/delete`, {
-                method: 'POST'
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    displaySuccessMessage(data.message); // Display success message
-                } else {
-                    console.error('Error deleting material:', data.message);
-                }
-            })
-            .catch(error => {
-                console.error('Error deleting material:', error);
-            });
-        }
-    </script>
 </body>
 </html>

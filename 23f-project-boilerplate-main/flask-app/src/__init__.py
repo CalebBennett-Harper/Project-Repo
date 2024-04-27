@@ -1,6 +1,6 @@
 # Some set up for the application 
 
-from flask import Flask, render_template
+from flask import Flask, render_template, session, request, redirect
 from flaskext.mysql import MySQL
 
 # create a MySQL object that we will use in other parts of the API
@@ -8,6 +8,7 @@ db = MySQL()
 
 def create_app():
     app = Flask(__name__)
+    app.app_context().push()
     
     # secret key that will be used for securely signing the session 
     # cookie and can be used for any other security related needs by 
@@ -33,7 +34,7 @@ def create_app():
     def welcome():
           with open('templates/index.html', 'r') as file:
                 html_content = file.read()
-          return html_content
+          return html_content 
 
     @app.route('/savings')
     def savings():

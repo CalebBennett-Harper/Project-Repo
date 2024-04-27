@@ -1,78 +1,91 @@
-<!-- savings.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Savings Management</title>
+    <link rel="stylesheet" href="../../static/css/style.css">
+
+    <!-- JavaScript code to handle dynamic content loading -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Include your custom JavaScript file -->
+    <script src="../../static/js/savings.js"></script>
 </head>
 <body>
     <h1>Savings Management</h1>
     
     <!-- Content area where dynamic content will be loaded -->
     <div id="content">
-        <!-- Content will be dynamically loaded here -->
+
+        <div id="totalSavings">
+            <h2>Total Savings</h2>
+            <p>User ID: {{ user_id }}</p>
+            <p>Total Savings: ${{ total_savings }}</p>
+        </div>
+
+        <div id="transactionDetails">
+            {% if transaction %}
+                <p><strong>Savings ID:</strong> {{ transaction[0] }}</p>
+                <p><strong>User ID:</strong> {{ transaction[1] }}</p>
+                <p><strong>Amount:</strong> ${{ transaction[2] }}</p>
+                <p><strong>Date:</strong> {{ transaction[3] }}</p>
+            {% else %}
+                <p>No transaction found.</p>
+            {% endif %}
+        </div>
+
+        <div id="createTransactionForm">
+            <form action="/savings/" method="POST">
+                <label for="user_id">User ID:</label>
+                <input type="text" id="user_id" name="user_id" required><br><br>
+        
+                <label for="amount">Amount:</label>
+                <input type="text" id="amount" name="amount" required><br><br>
+        
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required><br><br>
+        
+                <input type="submit" value="Create Transaction">
+            </form>
+        </div>
+
+        <div id="updateTransactionForm">
+            <form id="updateForm" action="{{ url_for('savings.update_savings', savings_id=savings_id) }}" method="post">
+                <label for="amount">Amount:</label>
+                <input type="text" id="amount" name="Amount" value="{{ transaction.Amount }}">
+                <label for="date">Date:</label>
+                <input type="text" id="date" name="Date" value="{{ transaction.Date }}">
+                <input type="submit" value="Update">
+            </form>
+        </div>
+
+        <div id="showUpdatedTransaction">
+            <p>The savings transaction has been successfully updated.</p>
+        </div>
+
+        <div id="deleteConfirmation">
+            <p>Are you sure you want to delete the following transaction?</p>
+            <p>Transaction ID: {{ transaction.Savings_ID }}</p>
+            <p>Amount: {{ transaction.Amount }}</p>
+            <p>Date: {{ transaction.Date }}</p>
+
+            <form action="{{ url_for('savings.delete_savings', savings_id=transaction.Savings_ID) }}" method="post">
+                <input type="submit" value="Yes, Delete">
+                <a href="{{ url_for('savings.loadTotalSavings') }}">No, Cancel</a>
+            </form>
+        </div>
+
     </div>
 
-    <!-- JavaScript code to handle dynamic content loading -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        // Function to load total savings for a user
-        function loadTotalSavings(userId) {
-            $.get(`/savings/total/${userId}`, function(data) {
-                $('#content').html(data);
-            });
-        }
-
-        // Function to load a specific savings transaction
-        function loadSavingsTransaction(savingsId) {
-            $.get(`/savings/transaction/${savingsId}`, function(data) {
-                $('#content').html(data);
-            });
-        }
-
-        // Function to load the create savings transaction form
-        function loadCreateForm() {
-            $.get('/savings/create', function(data) {
-                $('#content').html(data);
-            });
-        }
-
-        // Function to load the update savings transaction form
-        function loadUpdateForm(savingsId) {
-            $.get(`/savings/${savingsId}/update`, function(data) {
-                $('#content').html(data);
-            });
-        }
-
-        // Function to load the delete confirmation for a savings transaction
-        function loadDeleteConfirmation(savingsId) {
-            $.get(`/savings/${savingsId}/delete`, function(data) {
-                $('#content').html(data);
-            });
-        }
+        // Call loadTotalSavings function when the page loads
+        $(document).ready(function() {
+            // Replace 'user_id' with the actual user ID value
+            var userId = 'user_id'; // Example user ID
+            loadTotalSavings(userId);
+        });
     </script>
+
 </body>
 </html>
-
-<!-- OR 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Savings</title>
-    //Include any necessary CSS 
-</head>
-<body>
-    <div id="totalSavings"></div>
-    <div id="transactionDetails"></div>
-    <div id="createTransactionForm"></div>
-    <div id="updateTransactionForm"></div>
-    <div id="deleteConfirmation"></div>
-
-    //Include any necessary JavaScript libraries
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="{{ url_for('static', filename='savings.js') }}"></script>
-</body>
-</html> -->

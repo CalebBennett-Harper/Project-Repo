@@ -3,18 +3,18 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE=`TRADITIONAL,ALLOW_INVALID_DATES`;
 
 CREATE DATABASE IF NOT EXISTS nosmoke;
-grant all privileges on nosmoke_db.* to 'webapp'@'%';
+grant all privileges on nosmoke.* to 'webapp'@'%';
 flush privileges;
  
-use nosmoke_db;
--- DROP SCHEMA IF EXISTS `nosmoke_schema` ;
--- CREATE SCHEMA IF NOT EXISTS `nosmoke_schema` DEFAULT CHARACTER SET latin1 ;
--- USE `nosmoke_schema` ;
+use nosmoke;
+-- DROP SCHEMA IF EXISTS `nosmoke` ;
+-- CREATE SCHEMA IF NOT EXISTS `nosmoke` DEFAULT CHARACTER SET latin1 ;
+-- USE `nosmoke` ;
 
 -- -----------------------------------------------------
--- Table `nosmoke_schema`.`users`
+-- Table `nosmoke`.`users`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `nosmoke_schema`.`users` (
+CREATE TABLE IF NOT EXISTS `nosmoke`.`users` (
   `user_id` INT(11) NOT NULL AUTO_INCREMENT,
   `username` VARCHAR(255) NULL DEFAULT NULL,
   `age` INT(11) NULL DEFAULT NULL,
@@ -29,9 +29,9 @@ DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
--- Table `nosmoke_schema`.`badges`
+-- Table `nosmoke`.`badges`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `nosmoke_schema`.`badges` (
+CREATE TABLE IF NOT EXISTS `nosmoke`.`badges` (
   `badge_id` INT(11) NOT NULL AUTO_INCREMENT,
   `username` TEXT NULL DEFAULT NULL,
   `details` TEXT NULL DEFAULT NULL,
@@ -42,9 +42,9 @@ DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
--- Table `nosmoke_schema`.`challenges`
+-- Table `nosmoke`.`challenges`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `nosmoke_schema`.`challenges` (
+CREATE TABLE IF NOT EXISTS `nosmoke`.`challenges` (
   `challenge_id` INT(11) NOT NULL AUTO_INCREMENT,
   `levels` INT(11) NULL DEFAULT NULL,
   `user_id` INT(11) NOT NULL,
@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS `nosmoke_schema`.`challenges` (
   INDEX `end_date` (`end_date` DESC),
   CONSTRAINT `fk_challenges`
     FOREIGN KEY (`user_id`)
-    REFERENCES `nosmoke_schema`.`users` (`user_id`)
+    REFERENCES `nosmoke`.`users` (`user_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB
@@ -64,9 +64,9 @@ DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
--- Table `nosmoke_schema`.`education`
+-- Table `nosmoke`.`education`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `nosmoke_schema`.`education` (
+CREATE TABLE IF NOT EXISTS `nosmoke`.`education` (
   `resource_id` INT(11) NOT NULL AUTO_INCREMENT,
   `user_id` INT(11) NOT NULL,
   `articles` TEXT NULL DEFAULT NULL,
@@ -75,7 +75,7 @@ CREATE TABLE IF NOT EXISTS `nosmoke_schema`.`education` (
   PRIMARY KEY (`employee_id`),
   CONSTRAINT `fk_education`
     FOREIGN KEY (`user_id`)
-    REFERENCES `nosmoke_schema`.`users` (`user_id`)
+    REFERENCES `nosmoke`.`users` (`user_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB
@@ -83,9 +83,9 @@ DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
--- Table `nosmoke_schema`.`savings`
+-- Table `nosmoke`.`savings`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `nosmoke_schema`.`savings` (
+CREATE TABLE IF NOT EXISTS `nosmoke`.`savings` (
   `savings_id` INT(11) NOT NULL AUTO_INCREMENT,
   `user_id` INT(11) NOT NULL,
   `amount` DECIMAL(10, 2) NULL DEFAULT NULL,
@@ -94,7 +94,7 @@ CREATE TABLE IF NOT EXISTS `nosmoke_schema`.`savings` (
   INDEX `curr_date` (`curr_date` DESC),
   CONSTRAINT `fk_savings`
     FOREIGN KEY (`user_id`)
-    REFERENCES `nosmoke_schema`.`users` (`user_id`)
+    REFERENCES `nosmoke`.`users` (`user_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB
@@ -102,9 +102,9 @@ DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
--- Table `nosmoke_schema`.`social_support`
+-- Table `nosmoke`.`social_support`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `nosmoke_schema`.`social_support` (
+CREATE TABLE IF NOT EXISTS `nosmoke`.`social_support` (
   `support_id` INT(11) NOT NULL AUTO_INCREMENT,
   `user_id` INT(11) NOT NULL,
   `content` TEXT NULL DEFAULT NULL,
@@ -113,7 +113,7 @@ CREATE TABLE IF NOT EXISTS `nosmoke_schema`.`social_support` (
   PRIMARY KEY (`support_id`),
   CONSTRAINT `fk_social_support`
     FOREIGN KEY (`user_id`)
-    REFERENCES `nosmoke_schema`.`users` (`user_id`)
+    REFERENCES `nosmoke`.`users` (`user_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB
@@ -121,9 +121,9 @@ DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
--- Table `nosmoke_schema`.`posts`
+-- Table `nosmoke`.`posts`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `nosmoke_schema`.`posts` (
+CREATE TABLE IF NOT EXISTS `nosmoke`.`posts` (
   `post_id` INT(11) NOT NULL AUTO_INCREMENT,
   `support_id` INT(11) NOT NULL,
   `user_id` INT(11) NOT NULL,
@@ -134,12 +134,12 @@ CREATE TABLE IF NOT EXISTS `nosmoke_schema`.`posts` (
   INDEX `curr_date` (`curr_date` DESC),
   CONSTRAINT `fk_posts_user`
     FOREIGN KEY (`user_id`)
-    REFERENCES `nosmoke_schema`.`users` (`user_id`)
+    REFERENCES `nosmoke`.`users` (`user_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
   CONSTRAINT `fk_posts_support`
     FOREIGN KEY (`support_id`)
-    REFERENCES `nosmoke_schema`.`social_support` (`support_id`)
+    REFERENCES `nosmoke`.`social_support` (`support_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB
@@ -147,9 +147,9 @@ DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
--- Table `nosmoke_schema`.`comments`
+-- Table `nosmoke`.`comments`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `nosmoke_schema`.`comments` (
+CREATE TABLE IF NOT EXISTS `nosmoke`.`comments` (
   `comment_id` INT(11) NOT NULL AUTO_INCREMENT,
   `post_id` INT(11) NOT NULL,
   `user_id` INT(11) NOT NULL,
@@ -159,12 +159,12 @@ CREATE TABLE IF NOT EXISTS `nosmoke_schema`.`comments` (
   INDEX `curr_date` (`curr_date` DESC),
   CONSTRAINT `fk_comments_user`
     FOREIGN KEY (`user_id`)
-    REFERENCES `nosmoke_schema`.`users` (`user_id`)
+    REFERENCES `nosmoke`.`users` (`user_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
   CONSTRAINT `fk_comments_post`
     FOREIGN KEY (`post_id`)
-    REFERENCES `nosmoke_schema`.`posts` (`post_id`)
+    REFERENCES `nosmoke`.`posts` (`post_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB
@@ -172,9 +172,9 @@ DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
--- Table `nosmoke_schema`.`user_badges`
+-- Table `nosmoke`.`user_badges`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `nosmoke_schema`.`user_badges` (
+CREATE TABLE IF NOT EXISTS `nosmoke`.`user_badges` (
   `user_id` INT(11) NOT NULL,
   `badge_id` INT(11) NOT NULL,
   `earned_date` DATE NULL DEFAULT NULL,
@@ -182,12 +182,12 @@ CREATE TABLE IF NOT EXISTS `nosmoke_schema`.`user_badges` (
   INDEX `curr_date` (`curr_date` DESC),
   CONSTRAINT `fk_user_badges_user`
     FOREIGN KEY (`user_id`)
-    REFERENCES `nosmoke_schema`.`users` (`user_id`)
+    REFERENCES `nosmoke`.`users` (`user_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
   CONSTRAINT `fk_user_badges_badge`
     FOREIGN KEY (`badge_id`)
-    REFERENCES `nosmoke_schema`.`badges` (`badge_id`)
+    REFERENCES `nosmoke`.`badges` (`badge_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB
@@ -195,9 +195,9 @@ DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
--- Table `nosmoke_schema`.`user_challenges`
+-- Table `nosmoke`.`user_challenges`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `nosmoke_schema`.`user_challenges` (
+CREATE TABLE IF NOT EXISTS `nosmoke`.`user_challenges` (
   `user_id` INT(11) NOT NULL,
   `challenge_id` INT(11) NOT NULL,
   `progress` FLOAT NULL DEFAULT NULL,
@@ -205,12 +205,12 @@ CREATE TABLE IF NOT EXISTS `nosmoke_schema`.`user_challenges` (
   PRIMARY KEY (`user_id`, `challenge_id`),
   CONSTRAINT `fk_user_challenges_user`
     FOREIGN KEY (`user_id`)
-    REFERENCES `nosmoke_schema`.`users` (`user_id`)
+    REFERENCES `nosmoke`.`users` (`user_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
   CONSTRAINT `fk_user_challenges_challenge`
     FOREIGN KEY (`challenge_id`)
-    REFERENCES `nosmoke_schema`.`challenges` (`challenge_id`)
+    REFERENCES `nosmoke`.`challenges` (`challenge_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB
@@ -218,129 +218,129 @@ DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
--- Table `nosmoke_schema`.`user_education`
+-- Table `nosmoke`.`user_education`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `nosmoke_schema`.`user_education` (
+CREATE TABLE IF NOT EXISTS `nosmoke`.`user_education` (
   `user_id` INT(11) NOT NULL,
   `resource_id` INT(11) NOT NULL,
   PRIMARY KEY (`user_id`, `resource_id`),
   CONSTRAINT `fk_user_education_user`
     FOREIGN KEY (`user_id`)
-    REFERENCES `nosmoke_schema`.`users` (`user_id`)
+    REFERENCES `nosmoke`.`users` (`user_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
   CONSTRAINT `fk_user_education_resource`
     FOREIGN KEY (`resource_id`)
-    REFERENCES `nosmoke_schema`.`education` (`resource_id`)
+    REFERENCES `nosmoke`.`education` (`resource_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
 -- -----------------------------------------------------
--- Table `nosmoke_schema`.`user_support`
+-- Table `nosmoke`.`user_support`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `nosmoke_schema`.`user_support` (
+CREATE TABLE IF NOT EXISTS `nosmoke`.`user_support` (
   `user_id` INT(11) NOT NULL,
   `support_id` INT(11) NOT NULL,
   PRIMARY KEY (`user_id`, `support_id`),
   CONSTRAINT `fk_user_support_user`
     FOREIGN KEY (`user_id`)
-    REFERENCES `nosmoke_schema`.`users` (`user_id`)
+    REFERENCES `nosmoke`.`users` (`user_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
   CONSTRAINT `fk_user_support_support`
     FOREIGN KEY (`support_id`)
-    REFERENCES `nosmoke_schema`.`social_support` (`support_id`)
+    REFERENCES `nosmoke`.`social_support` (`support_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
 -- -----------------------------------------------------
--- Table `nosmoke_schema`.`post_comments`
+-- Table `nosmoke`.`post_comments`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `nosmoke_schema`.`post_comments` (
+CREATE TABLE IF NOT EXISTS `nosmoke`.`post_comments` (
   `post_id` INT(11) NOT NULL,
   `comment_id` INT(11) NOT NULL,
   PRIMARY KEY (`user_id`, `comment_id`),
   CONSTRAINT `fk_post_comments_post`
     FOREIGN KEY (`post_id`)
-    REFERENCES `nosmoke_schema`.`posts` (`post_id`)
+    REFERENCES `nosmoke`.`posts` (`post_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
   CONSTRAINT `fk_post_comments_comment`
     FOREIGN KEY (`comment_id`)
-    REFERENCES `nosmoke_schema`.`comments` (`comment_id`)
+    REFERENCES `nosmoke`.`comments` (`comment_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
 -- -----------------------------------------------------
--- Table `nosmoke_schema`.`support_posts`
+-- Table `nosmoke`.`support_posts`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `nosmoke_schema`.`support_posts` (
+CREATE TABLE IF NOT EXISTS `nosmoke`.`support_posts` (
   `post_id` INT(11) NOT NULL,
   `support_id` INT(11) NOT NULL,
   PRIMARY KEY (`user_id`, `support_id`),
   CONSTRAINT `fk_support_posts_post`
     FOREIGN KEY (`post_id`)
-    REFERENCES `nosmoke_schema`.`posts` (`post_id`)
+    REFERENCES `nosmoke`.`posts` (`post_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
   CONSTRAINT `fk_support_posts_support`
     FOREIGN KEY (`support_id`)
-    REFERENCES `nosmoke_schema`.`social_support` (`support_id`)
+    REFERENCES `nosmoke`.`social_support` (`support_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
 -- -----------------------------------------------------
--- Table `nosmoke_schema`.`badges_challenges`
+-- Table `nosmoke`.`badges_challenges`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `nosmoke_schema`.`badges_challenges` (
+CREATE TABLE IF NOT EXISTS `nosmoke`.`badges_challenges` (
   `badge_id` INT(11) NOT NULL,
   `challenge_id` INT(11) NOT NULL,
   PRIMARY KEY (`badge_id`, `challenge_id`),
   CONSTRAINT `fk_badges_challenges_badges`
     FOREIGN KEY (`badge_id`)
-    REFERENCES `nosmoke_schema`.`badges` (`badge_id`)
+    REFERENCES `nosmoke`.`badges` (`badge_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
   CONSTRAINT `fk_badges_challenges_challenges`
     FOREIGN KEY (`challenge_id`)
-    REFERENCES `nosmoke_schema`.`challenges` (`challenge_id`)
+    REFERENCES `nosmoke`.`challenges` (`challenge_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
 -- -----------------------------------------------------
--- Table `nosmoke_schema`.`completed_challenge`
+-- Table `nosmoke`.`completed_challenge`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `nosmoke_schema`.`completed_challenge` (
+CREATE TABLE IF NOT EXISTS `nosmoke`.`completed_challenge` (
   `user_id` INT(11) NOT NULL,
   `challenge_id` INT(11) NOT NULL,
   PRIMARY KEY (`user_id`, `challenge_id`),
   CONSTRAINT `fk_completed_challenge_user`
     FOREIGN KEY (`user_id`)
-    REFERENCES `nosmoke_schema`.`users` (`user_id`)
+    REFERENCES `nosmoke`.`users` (`user_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
   CONSTRAINT `fk_completed_challenge_challenge`
     FOREIGN KEY (`challenge_id`)
-    REFERENCES `nosmoke_schema`.`challenges` (`challenge_id`)
+    REFERENCES `nosmoke`.`challenges` (`challenge_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
 -- -----------------------------------------------------
--- Table `nosmoke_schema`.`suppliers`
+-- Table `nosmoke`.`suppliers`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `nosmoke_schema`.`suppliers` (
+CREATE TABLE IF NOT EXISTS `nosmoke`.`suppliers` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `company` VARCHAR(50) NULL DEFAULT NULL,
   `last_name` VARCHAR(50) NULL DEFAULT NULL,

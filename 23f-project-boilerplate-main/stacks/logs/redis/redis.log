@@ -281,3 +281,26 @@
 2022:C 26 Apr 2024 04:08:02.051 * DB saved on disk
 2022:C 26 Apr 2024 04:08:02.051 * RDB: 0 MB of memory used by copy-on-write
 1509:M 26 Apr 2024 04:08:02.150 * Background saving terminated with success
+1509:signal-handler (1714105786) Received SIGTERM scheduling shutdown...
+1509:M 26 Apr 2024 04:29:46.684 # User requested shutdown...
+1509:M 26 Apr 2024 04:29:46.684 * Saving the final RDB snapshot before exiting.
+1509:M 26 Apr 2024 04:29:46.686 * DB saved on disk
+1509:M 26 Apr 2024 04:29:46.686 # Redis is now ready to exit, bye bye...
+1505:C 27 Apr 2024 03:09:07.288 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1505:C 27 Apr 2024 03:09:07.288 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1505, just started
+1505:C 27 Apr 2024 03:09:07.288 # Configuration loaded
+1505:M 27 Apr 2024 03:09:07.292 * Running mode=standalone, port=6379.
+1505:M 27 Apr 2024 03:09:07.292 # Server initialized
+1505:M 27 Apr 2024 03:09:07.292 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1505:M 27 Apr 2024 03:09:07.292 * DB loaded from disk: 0.001 seconds
+1505:M 27 Apr 2024 03:09:07.292 * Ready to accept connections
+1505:M 27 Apr 2024 03:09:25.952 * 1 changes in 15 seconds. Saving...
+1505:M 27 Apr 2024 03:09:25.952 * Background saving started by pid 1789
+1789:C 27 Apr 2024 03:09:25.958 * DB saved on disk
+1789:C 27 Apr 2024 03:09:25.958 * RDB: 0 MB of memory used by copy-on-write
+1505:M 27 Apr 2024 03:09:26.054 * Background saving terminated with success
+1505:M 27 Apr 2024 03:09:42.086 * 1 changes in 15 seconds. Saving...
+1505:M 27 Apr 2024 03:09:42.089 * Background saving started by pid 1805
+1805:C 27 Apr 2024 03:09:42.095 * DB saved on disk
+1805:C 27 Apr 2024 03:09:42.096 * RDB: 0 MB of memory used by copy-on-write
+1505:M 27 Apr 2024 03:09:42.191 * Background saving terminated with success
